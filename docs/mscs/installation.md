@@ -18,6 +18,41 @@ permalink: /docs/mscs/installation
 
 ## Dependencies
 
+We've made an attempt to utilize only features that are normally installed in
+most Linux and UNIX environments in this script. However, there may be a few
+requirements that this script has that may not already be in place:
+* Java JRE                   - The Minecraft server software requires this. 
+                               **As of Minecraft 1.12, Java 8 is required.**
+* Perl                       - Most, if not all, Unix and Linux like systems
+                               have this preinstalled.
+* libjson-perl               - Allows the script to read JSON formatted data.
+* libwww-perl                - Allows the script to download data to verify
+                               downloads.
+* liblwp-protocol-https-perl - Allows the script to download data over HTTPS.
+* Python                     - Required by the Minecraft Overviewer mapping
+                               software.
+* GNU Make                   - Allows you to use the Makefile to simplify
+                               installation.
+* GNU Wget                   - Allows the script to download software updates
+                               via the internet.
+* rdiff-backup               - Allows the script to efficiently run backups.
+* rsync                      - Allows the script to efficiently make copies of
+                               files.
+* Socat                      - Allows the script to communicate with the
+                               Minecraft server.
+* Iptables                   - Although not explicitly required, a good
+                               firewall should be installed.
+
+If you are running Debian or Ubuntu, you can make sure that these are
+installed by running:
+```bash
+    sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget rdiff-backup rsync socat iptables
+```
+If you are running Fedora, you can make sure that these are
+installed by running:
+```bash
+	yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget rdiff-backup rsync socat iptables git sudo procps which
+```
 ## Downloading the script
 
 ## Configuration
