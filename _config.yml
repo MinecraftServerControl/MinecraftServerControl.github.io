@@ -1,5 +1,6 @@
-title: MSCS Docs
 remote_theme: pmarsceill/just-the-docs
+title: MSCS Docs
+baseurl: "/mscs"
 aux_links:
   "MSCS on GitHub":
     - "//github.com/MinecraftServerControl/mscs"
