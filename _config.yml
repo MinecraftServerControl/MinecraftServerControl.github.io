@@ -27,6 +27,8 @@ exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "pac
 # Set a path/url to a logo that will be displayed instead of the title
 #logo: "/assets/images/just-the-docs.png"
 
+favicon: "/assets/favicon.ico"
+
 # Enable or disable the site search
 search_enabled: true
 
