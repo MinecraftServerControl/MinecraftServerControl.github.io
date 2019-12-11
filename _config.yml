@@ -18,8 +18,8 @@ remote_theme: pmarsceill/just-the-docs
 # in the templates via {{ site.myvariable }}.
 title: MSCS Docs
 description: Minecraft Server Control Script Documentation
-baseurl:  # the subpath of your site, e.g. /blog
-url: "mscs" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/MinecraftServerControl.github.io" # the subpath of your site, e.g. /blog
+url: "https://MinecraftServerControl.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"]
