@@ -15,7 +15,16 @@ permalink: /docs/mscs/installation
 {:toc}
 
 ---
-
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
 ## Dependencies
 
 We've made an attempt to utilize only features that are normally installed in
