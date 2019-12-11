@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 1
+permalink: /
+---
+
 # Minecraft Server Control Script Docs
 {: .fs-9 }
 Minecraft Server Control Script (MSCS) is a server-management script for UNIX and Linux powered Minecraft servers.
