@@ -1,2 +1,2 @@
-# MinecraftServerControl.github.io
+# Home
 MinecraftServerControl Documentation
