@@ -46,12 +46,12 @@ requirements that this script has that may not already be in place:
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
 ```bash
-sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget rdiff-backup rsync socat iptables
+sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget git rdiff-backup rsync socat iptables
 ```
 If you are running Fedora, you can make sure that these are
 installed by running:
 ```bash
-yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget rdiff-backup rsync socat iptables git sudo procps which
+yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
 
 
@@ -59,7 +59,6 @@ yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol
 
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
-sudo apt-get install git
 git clone https://github.com/MinecraftServerControl/mscs.git && cd mscs
 sudo make install
 ```
