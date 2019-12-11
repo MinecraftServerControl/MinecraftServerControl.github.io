@@ -2,7 +2,7 @@
 layout: default
 title: Home
 nav_order: 1
-permalink: /
+permalink: /mscs
 ---
 
 # Minecraft Server Control Script Docs
