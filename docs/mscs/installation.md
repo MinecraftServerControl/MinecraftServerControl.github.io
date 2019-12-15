@@ -77,25 +77,30 @@ To get a server to run the MSCS script on startup, and cleanly stop the server o
 ```bash
 useradd --system --user-group --create-home -K UMASK=0022 --home /opt/mscs minecraft
 ```
+
 2. Install the script:
 ```bash
 sudo install -m 0755 msctl /usr/local/bin/msctl
 sudo install -m 0755 mscs /usr/local/bin/mscs
 ```
-3a. If using systemd (ie. Ubuntu 15.04+), link the script to the server's startup and shutdown sequences:
+
+3. If using systemd (ie. Ubuntu 15.04+), link the script to the server's startup and shutdown sequences:
 ```bash
 sudo install -m 0644 mscs.service /etc/systemd/system/mscs.service
 sudo systemctl -f enable mscs.service
 ```
-3b. If using SysV-style, upstart, or similar (ie. Ubuntu 14.10 and lower) link the script to your server's startup and shutdown   sequences:
-  ```bash
-  sudo ln -s /usr/local/bin/mscs /etc/init.d/mscs
-  sudo update-rc.d mscs defaults
+
+4. If using SysV-style, upstart, or similar (ie. Ubuntu 14.10 and lower) link the script to your server's startup and shutdown   sequences:
+```bash
+sudo ln -s /usr/local/bin/mscs /etc/init.d/mscs
+sudo update-rc.d mscs defaults
 ```
-4. Add Bash Completion support:
+
+5. Add Bash Completion support:
 ```bash
 sudo install -m 0644 mscs.completion /etc/bash_completion.d/mscs
 ```
+
 The Minecraft server software will be automatically downloaded to the following location on the first run:
 ```bash
 /opt/mscs/server/
