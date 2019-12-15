@@ -54,6 +54,7 @@ installed by running:
 ```bash
 yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
+---
 
 ## Quick Start 
 
@@ -64,6 +65,8 @@ sudo make install
 ```
 This will, by default, create a user to perform MSCS tasks 
 called `minecraft`and give it access to write in the `/opt/mscs` folder.
+
+---
 
 ## Manual Installation
 Follow the instructions below if the installer does not work (`sudo make install`) or if the installation requires custom locations, user accounts, or settings.
