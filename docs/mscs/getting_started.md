@@ -73,4 +73,4 @@ In this example we want to rename a world named `alpha` to `vanillaMC`:
 
 ```bash
 mscs rename alpha vanillaMC
-```bash
+```
