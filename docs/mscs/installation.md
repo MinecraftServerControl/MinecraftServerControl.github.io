@@ -22,6 +22,7 @@ We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
+<small>
 * Java JRE                   - The Minecraft server software requires this. 
                                **As of Minecraft 1.12, Java 8 is required.**
 * Perl                       - Most, if not all, Unix and Linux like systems
@@ -43,8 +44,7 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
-<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
-
+</small>
 
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
