@@ -43,6 +43,7 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
+jh{: .fs-1 }
 
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
@@ -56,7 +57,7 @@ yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol
 ```
 ---
 
-## Quick Start 
+## Quick start 
 
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
@@ -68,8 +69,8 @@ called `minecraft`and give it access to write in the `/opt/mscs` folder.
 
 ---
 
-## Manual Installation
-Follow the instructions below if the installer does not work (`sudo make install`) or if the installation requires custom locations, user accounts, or settings.
+## Manual installation
+If the instructions above do not work (i.e. fails on `sudo make install`) or if the installation requires custom locations, user accounts, or settings, then follow the instructions below.
 
 To get a server to run the MSCS script on startup, and cleanly stop the server on shutdown, the [MSCS](https://github.com/MinecraftServerControl/mscs/blob/master/mscs) script must be copied to `/usr/local/bin/`, have execute permissions set, and the system must run the script on startup and shutdown. For Bash completion support, the `mscs.completion` script must be copied to `/etc/bash_completion.d/`. For security reasons, the script runs with an account named `minecraft` rather than `root`. The `minecraft` account must be created before the script is used.
 
