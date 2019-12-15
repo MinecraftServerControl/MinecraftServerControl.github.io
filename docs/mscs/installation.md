@@ -21,6 +21,14 @@ permalink: /docs/mscs/installation
 We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
+
+<details>
+  <summary>Collapsed Block
+</summary>
+
+  <h2 id="header">Header</h2>
+</details>
+
 * Java JRE                   - The Minecraft server software requires this. 
                                **As of Minecraft 1.12, Java 8 is required.**
 * Perl                       - Most, if not all, Unix and Linux like systems
