@@ -70,7 +70,7 @@ called `minecraft`and give it access to write in the `/opt/mscs` folder.
 ## Manual Installation
 Follow the instructions below if the installer does not work (`sudo make install`) or if the installation requires custom locations, user accounts, or settings.
 
-To get a server to run the MSCS script on startup, and cleanly stop the server on shutdown, the [MSCS] script must be copied to `/usr/local/bin/`, have execute permissions set, and the system must run the script on startup and shutdown. For Bash completion support, the `mscs.completion` script must be copied to `/etc/bash_completion.d/`. For security reasons, the script runs with an account named `minecraft` rather than `root`. The `minecraft` account must be created before the script is used.
+To get a server to run the MSCS script on startup, and cleanly stop the server on shutdown, the [MSCS](https://github.com/MinecraftServerControl/mscs/blob/master/mscs) script must be copied to `/usr/local/bin/`, have execute permissions set, and the system must run the script on startup and shutdown. For Bash completion support, the `mscs.completion` script must be copied to `/etc/bash_completion.d/`. For security reasons, the script runs with an account named `minecraft` rather than `root`. The `minecraft` account must be created before the script is used.
 
 Create the `minecraft` user:
 ```bash
