@@ -5,7 +5,7 @@ nav_order: 3
 permalink: /docs/mscs/getting_started
 ---
 
-# Installation
+# Getting Started
 {: .no_toc }
 
 ## Table of contents
