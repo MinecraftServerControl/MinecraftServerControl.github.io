@@ -22,7 +22,8 @@ We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
-<details><summary>List of Dependencies</summary>
+<details><summary>List of Dependencies
+  </summary>
 
 * Java JRE                   - The Minecraft server software requires this. 
                                **As of Minecraft 1.12, Java 8 is required.**
