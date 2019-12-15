@@ -56,7 +56,7 @@ yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol
 ```
 
 
-## Quick start 
+## Quick Start 
 
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
