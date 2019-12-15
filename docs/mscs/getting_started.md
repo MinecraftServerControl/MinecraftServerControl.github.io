@@ -16,7 +16,7 @@ permalink: /docs/mscs/getting_started
 
 ---
 
-# Creating a new world
+## Creating a new world
 The command to create a new world is:
 
     mscs create [world] [port] <ip>
@@ -35,7 +35,7 @@ is the name given to the world you created.
 
 ---
 
-# Importing an existing world
+## Importing an existing world
 
 If you wish to import or make a copy of an existing world (perhaps one that
 you have not been using with mscs), simply do the following:
@@ -68,7 +68,7 @@ mscs import ~/minecraft_world alpha 25565
 
 ---
 
-# Renaming a world
+## Renaming a world
 In this example we want to rename a world named `alpha` to `vanillaMC`:
 
 ```bash
