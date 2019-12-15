@@ -43,7 +43,8 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
-jh{: .fs-1 }
+<small>You must have GitHub Pages enabled on your repo, one or more Markdown files, and a `_config.yml` file. [See an example repository](https://github.com/pmarsceill/jtd-remote)</small>
+
 
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
