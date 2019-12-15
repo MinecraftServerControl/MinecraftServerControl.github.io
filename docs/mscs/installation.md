@@ -66,4 +66,36 @@ sudo make install
 This will, by default, create a user to perform MSCS tasks 
 called `minecraft`and give it access to write in the `/opt/mscs` folder.
 
-## Other ways to install
+
+## Manual Installation
+Follow the instructions below if the installer does not work (`sudo make install`) or if the installation requires custom locations, user accounts, or settings.
+
+To get a server to run the MSCS script on startup, and cleanly stop the server on shutdown, the [MSCS] script must be copied to `/usr/local/bin/`, have execute permissions set, and the system must run the script on startup and shutdown. For Bash completion support, the `mscs.completion` script must be copied to `/etc/bash_completion.d/`. For security reasons, the script runs with an account named `minecraft` rather than `root`. The `minecraft` account must be created before the script is used.
+
+Create the `minecraft` user:
+```bash
+useradd --system --user-group --create-home -K UMASK=0022 --home /opt/mscs minecraft
+```
+Install the script:
+```bash
+sudo install -m 0755 msctl /usr/local/bin/msctl
+sudo install -m 0755 mscs /usr/local/bin/mscs
+```
+Link the script to the server's startup and shutdown sequences when using systemd (ie. Ubuntu 15.04+):
+```bash
+sudo install -m 0644 mscs.service /etc/systemd/system/mscs.service
+sudo systemctl -f enable mscs.service
+```
+Link the script to your server's startup and shutdown sequences when using SysV-style, upstart, or similar (ie. Ubuntu 14.10 and lower):
+```bash
+sudo ln -s /usr/local/bin/mscs /etc/init.d/mscs
+sudo update-rc.d mscs defaults
+```
+Add Bash Completion support:
+```bash
+sudo install -m 0644 mscs.completion /etc/bash_completion.d/mscs
+```
+The Minecraft server software will be automatically downloaded to the following location on the first run:
+```bash
+/opt/mscs/server/
+```
