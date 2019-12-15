@@ -23,11 +23,8 @@ most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
 <details>
-  <summary>Collapsed Block
+  <summary>List of Dependencies
 </summary>
-
-  <h2 id="header">Header</h2>
-</details>
 
 * Java JRE                   - The Minecraft server software requires this. 
                                **As of Minecraft 1.12, Java 8 is required.**
@@ -50,6 +47,9 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
+</details>
+
+
 
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
