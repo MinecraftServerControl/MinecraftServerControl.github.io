@@ -34,39 +34,107 @@ already are the defaults that come with the script (properties that are empty
 have no defaults). You can change any of the properties to your liking (including defaults) by adding them
 to the `mscs.defaults` file or editing them if they are already in the file. 
 
+    # Location of the mscs files.
     mscs-location=/opt/mscs
+
+    # Location of world files.
     mscs-worlds-location=/opt/mscs/worlds
+
+    # URL to download the version_manifest.json file.
     mscs-versions-url=https://launchermeta.mojang.com/mc/game/version_manifest.json
+
+    # Location of the version_manifest.json file.
     mscs-versions-json=/opt/mscs/version_manifest.json
+
+    # Length in minutes to keep the version_manifest.json file before updating.
     mscs-versions-duration=30
+
+    # Length in minutes to keep lock files before removing.
     mscs-lockfile-duration=1440
+
+    # Default world name.
     mscs-default-world=world
+
+    # Default Port.
     mscs-default-port=25565
+
+    # Default IP address.
     mscs-default-ip=
+
+    # Default version type (release or snapshot).
     mscs-default-version-type=release
+
+    # Default version of the client software.
     mscs-default-client-version=$CURRENT_VERSION
+
+    # Default .jar file for the client software.
     mscs-default-client-jar=$CLIENT_VERSION.jar
+
+    # Default download URL for the client software.
     mscs-default-client-url=
+
+    # Default download URL for the client software.
     mscs-default-client-location=/opt/mscs/.minecraft/versions/$CLIENT_VERSION
+
+    # Default version of the server software.
     mscs-default-server-version=$CURRENT_VERSION
+
+    # Default arguments for the JVM.
     mscs-default-jvm-args=
+
+    # Default .jar file for the server software.
     mscs-default-server-jar=minecraft_server.$SERVER_VERSION.jar
+
+    # Default download URL for the server software.
     mscs-default-server-url=
+
+    # Default arguments for a world server.
     mscs-default-server-args=nogui
+
+    # Default initial amount of memory for a world server.
     mscs-default-initial-memory=128M
+
+    # Default maximum amount of memory for a world server.
     mscs-default-maximum-memory=2048M
+
+    # Default location of the server .jar file.
     mscs-default-server-location=/opt/mscs/server
+
+    # Default command to run for a world server.
     mscs-default-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
+
+    # Location to store backup files.
     mscs-backup-location=/opt/mscs/backups
+
+    # Location of the backup log file.
     mscs-backup-log=/opt/mscs/backups/backup.log
+
+    # Length in days that backups survive. A value less than 1 disables backup deletion.
     mscs-backup-duration=15
+
+    # Length in days that logs survive. A value less than 1 disables log deletion.
     mscs-log-duration=15
+
+    # Properties to return for detailed listings.
     mscs-detailed-listing=motd server-ip server-port max-players level-type online-mode
+
+    # Enable the mirror option by default for worlds.
+    # 0 = disabled (default), 1 = enabled.
     mscs-enable-mirror=0
+
+    # Default path for the mirror files.
     mscs-mirror-path=/dev/shm/mscs
+
+    # Location of Overviewer.
     mscs-overviewer-bin=/usr/bin/overviewer.py
+
+    # URL for Overviewer.
     mscs-overviewer-url=http://overviewer.org
+
+    # Location of Overviewer generated map files.
     mscs-maps-location=/opt/mscs/maps
+
+    # URL for accessing Overviewer generated maps.
     mscs-maps-url=http://minecraft.server.com/maps
     
 The following variables may be used in some of the above properties:
@@ -95,20 +163,49 @@ already are the defaults that come with the script (properties that are empty
 have no defaults). You can change any of the properties to your liking (including defaults) by adding them
 to the `mscs.properties` file or editing them if they are already in the file. 
 
+    # Enable or disable the world server.
     mscs-enabled=true
+
+    # Assign the version type (release or snapshot).
     mscs-version-type=release
+
+    # Assign the version of the client software.
     mscs-client-version=$CURRENT_VERSION
+
+    # Assign the .jar file for the client software.
     mscs-client-jar=$CLIENT_VERSION.jar
+
+    # Assign the download URL for the client software.
     mscs-client-url=https://s3.amazonaws.com/Minecraft.Download/versions/$CLIENT_VERSION/$CLIENT_VERSION.jar
+
+    # Assign the location of the client .jar file.
     mscs-client-location=/opt/mscs/.minecraft/versions/$CLIENT_VERSION
+
+    # Assign the version of the server software.
     mscs-server-version=$CURRENT_VERSION
+
+    # Assign the arguments to the JVM.
     mscs-jvm-args=
+
+    # Assign the .jar file for the server software.
     mscs-server-jar=minecraft_server.$SERVER_VERSION.jar
+
+    # Assign the download URL for the server software.
     mscs-server-url=https://s3.amazonaws.com/Minecraft.Download/versions/$SERVER_VERSION/minecraft_server.$SERVER_VERSION.jar
+
+    # Assign the arguments to the server.
     mscs-server-args=nogui
+
+    # Assign the initial amount of memory for the server.
     mscs-initial-memory=128M
+
+    # Assign the maximum amount of memory for the server.
     mscs-maximum-memory=2048M
+
+    # Assign the location of the server .jar file.
     mscs-server-location=/opt/mscs/server
+
+    # Assign the command to run for the server.
     mscs-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
     
 The following variables may be used in some of the values of the above keys:
