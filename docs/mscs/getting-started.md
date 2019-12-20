@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Getting Started
+title: Getting started
 nav_order: 3
 permalink: /docs/mscs/getting-started
 ---
 
-# Getting Started
+# Getting started
 {: .no_toc }
 
 ## Table of contents
