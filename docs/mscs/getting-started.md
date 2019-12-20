@@ -2,7 +2,7 @@
 layout: default
 title: Getting Started
 nav_order: 3
-permalink: /docs/mscs/getting_started
+permalink: /docs/mscs/getting-started
 ---
 
 # Getting Started
