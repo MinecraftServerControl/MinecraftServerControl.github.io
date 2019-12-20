@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Adjusting World & Server Properties
+title: Adjusting world & server properties
 nav_order: 4
 permalink: /docs/mscs/adjusting-world-server-properties
 ---
 
-# Adjusting World & Server Properties
+# Adjusting world & server properties
 {: .no_toc }
 
 ## Table of contents
