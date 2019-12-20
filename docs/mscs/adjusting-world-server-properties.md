@@ -31,8 +31,8 @@ the `mscs.defaults` file can be found at either `$HOME/mscs.defaults` or
 
 Listed below are the global server properties currently available. The properties that are set
 already are the defaults that come with the script (properties that are empty
-have no defaults). You can change any of the properties to your liking by adding or editing them
-in the `mscs.defaults` file. 
+have no defaults). You can change any of the properties to your liking (including defaults) by adding them
+to the `mscs.defaults` file or editing them if they are already in the file. 
 
     mscs-location=/opt/mscs
     mscs-worlds-location=/opt/mscs/worlds
@@ -92,8 +92,8 @@ you had a world called `myWorld`, the path would be
 
 Listed below are the individual world properties currently available. The properties that are set
 already are the defaults that come with the script (properties that are empty
-have no defaults). You can change any of the properties to your liking by adding or editing them
-in the `mscs.properties` file in the world folder you wish to change the properties of.
+have no defaults). You can change any of the properties to your liking (including defaults) by adding them
+to the `mscs.properties` file or editing them if they are already in the file. 
 
     mscs-enabled=true
     mscs-version-type=release
