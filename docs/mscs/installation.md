@@ -66,7 +66,7 @@ git clone https://github.com/MinecraftServerControl/mscs.git && cd mscs
 sudo make install
 ```
 This will, by default, create a user to perform MSCS tasks 
-called `minecraft`and give it access to write in the `/opt/mscs` folder.
+called `minecraft` and give it access to write in the `/opt/mscs` folder.
 
 ---
 
