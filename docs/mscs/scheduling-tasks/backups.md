@@ -82,6 +82,8 @@ Run the backup every day at midnight.
 0 0 * * * /usr/local/bin/mscs backup
 ```
 
+Visit [crontab.guru](http://crontab.guru) for more in-depth examples.
+
 ---
 
 ## Viewing & restoring backups
