@@ -33,16 +33,20 @@ world every 2 hours:
 
 Edit the crontab file for the `minecraft` user using `sudo`:
 
-    sudo crontab -e -u minecraft
+```bash
+sudo crontab -e -u minecraft
+```
 
 Page down until you get to an empty line. Then paste the following:
 
-    # Define HOME and PATH
-    HOME=/opt/mscs
-    PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+```bash
+# Define HOME and PATH
+HOME=/opt/mscs
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-    # Run mscs backups
-    0 */2 * * *  mscs backup myWorld
+# Run mscs backups
+0 */2 * * *  mscs backup myWorld
+```
 
 * We define HOME and PATH because `cron` may not do it for us. The HOME and PATH we've
   defined above are the default values set with the default installation.
@@ -54,34 +58,38 @@ Page down until you get to an empty line. Then paste the following:
 
 * `myWorld` is the name of the world you wish to backup. Omitting this will
   backup all worlds.
-  
----  
  
 ### Scheduling examples
 Run the backup hourly.
 
-    # Minecraft backup worlds
-    0 * * * * /usr/local/bin/mscs backup
+```bash
+# Minecraft backup worlds every hour
+0 * * * * /usr/local/bin/mscs backup
+```
 
 Run the backup every 2 hours.
 
-    # Minecraft backup worlds
-    0 */2 * * * /usr/local/bin/mscs backup
+```bash
+# Minecraft backup worlds every 2 hours
+0 */2 * * * /usr/local/bin/mscs backup
+```
 
 Run the backup every day at midnight.
 
-    # Minecraft backup worlds
-    0 0 * * * /usr/local/bin/mscs backup
+```bash
+# Minecraft backup worlds every day at midnight
+0 0 * * * /usr/local/bin/mscs backup
+```
 
 ---
 
-## Viewing and restoring backups
+## Viewing & restoring backups
 Once you've scheduled backups, you can view the backups created by running the `mscs list-backups` command, and restore a backup using the `mscs restore-backup` command. 
 
 You can specify how long to keep backups by changing the
 `mscs-backup-duration` property in `mscs.defaults` or the world's `mscs.properties` config file (see [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)).
 
-### Example
+### Restoring backup example
 To list the date and time of all available backups for a world named `alpha`:
 
     mscs list-backups alpha
