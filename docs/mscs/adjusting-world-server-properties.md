@@ -18,13 +18,16 @@ permalink: /docs/mscs/adjusting-world-server-properties
 
 By default, every world in MSCS inherits from a global server properties file called `mscs.defaults`. 
 These defaults can be overidden on a per-world basis by creating an `mscs.properties` file in the directories of the
-world(s) you wish to overwrite. Only properties that will be changed need to be copied into the `mscs.properties` file--
-the MSCS script will use the global `mscs.defaults` for any properties that are left out.
+world(s) you wish to overwrite. Only properties that will be changed need to be copied into the `mscs.properties` file--the MSCS script will use the global `mscs.defaults` for any properties that are left out.
 
 ---
 
 ## Global server properties
-The global server properties file is called `mscs.defaults`. This file can be found at
+The global server properties file is called `mscs.defaults`. As mentioned
+above, all MSCS worlds inherit properties from this file unless the properties
+are overridden in the world's `mscs.properties` file. 
+
+This `mscs.defaults` file can be found at
 `/opt/mscs/mscs.defaults`. When using the `msctl` script in multi-user mode,
 the `mscs.defaults` file can be found at either `$HOME/mscs.defaults` or
 `$HOME/.config/mscs/mscs.defaults`.
@@ -152,7 +155,7 @@ The following variables may be used in some of the above properties:
 ---
 
 ## Individual world properties
-Each world server can override the default, global server values by
+As mentioned earlier, each world server can override the default, global server values by
 adding properties to the world's `mscs.properties` file. The
 `mscs.properties` file can be found in every world folder (for instance, if
 you had a world called `myWorld`, the path would be
