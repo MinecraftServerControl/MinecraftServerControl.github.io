@@ -23,7 +23,7 @@ This is the easy part. To backup:
 
 Where `<world>` is the world to backup. Leaving `<world>` off will back up all worlds.
 
-By default, backups are saved in `/opt/mscs/backups`. The location backups are saved can be configured by changing `mscs-backup-location` in `mscs.defaults` or the world's `mscs.properties` config file (See [adjusting world & server properties][https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties]).
+By default, backups are saved in `/opt/mscs/backups`. The location backups are saved can be configured by changing `mscs-backup-location` in `mscs.defaults` or the world's `mscs.properties` config file (See [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)).
 
 ---
 
@@ -44,8 +44,10 @@ Page down until you get to an empty line. Then paste the following:
     # Run mscs backups
     0 */2 * * *  mscs backup myWorld
 
-* We define HOME and PATH because `cron` may not do it for us. *Make sure that
-  PATH and HOME match the environment on your system.*
+* We define HOME and PATH because `cron` may not do it for us. The HOME and PATH we've
+  defined above are the default values set with the default installation.
+  If you did  not follow the default installation, *Make sure that
+  PATH and HOME match the environment on your system.* 
 
 * `0 */2 * * *` is the time interval to backup. This particular expression
   means backup every 2 hours. We list some more common examples below.
@@ -56,7 +58,6 @@ Page down until you get to an empty line. Then paste the following:
 ---  
  
 ### Scheduling examples
-
 Run the backup hourly.
 
     # Minecraft backup worlds
@@ -75,14 +76,12 @@ Run the backup every day at midnight.
 ---
 
 ## Viewing and restoring backups
-
-Once you've [scheduled backups](#scheduling-backups), you can view the backups created by running the `mscs list-backups` command, and restore a backup using the `mscs restore-backup` command. 
+Once you've scheduled backups, you can view the backups created by running the `mscs list-backups` command, and restore a backup using the `mscs restore-backup` command. 
 
 You can specify how long to keep backups by changing the
-`mscs-backup-duration` property in `mscs.defaults` or the world's `mscs.properties` config file file (see [adjusting world & server properties][https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties]).
+`mscs-backup-duration` property in `mscs.defaults` or the world's `mscs.properties` config file (see [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)).
 
 ### Example
-
 To list the date and time of all available backups for a world named `alpha`:
 
     mscs list-backups alpha
