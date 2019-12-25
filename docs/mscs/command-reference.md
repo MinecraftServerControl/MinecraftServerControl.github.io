@@ -14,6 +14,8 @@ will be started using the `minecraft` user instead for security purposes.
 
 Usage:  `mscs [<options>] <action>`
 
+---
+
 Actions:
 
 ```
