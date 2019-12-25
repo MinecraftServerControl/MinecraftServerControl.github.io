@@ -41,6 +41,7 @@ We've listed the map-related settings below:
    to your web-server folder, e.g. `var/www/` (or symlink your web-server folder to this value).
 * `mscs-maps-url`: The link to be displayed in chat to view the maps when mapping is complete. 
 
+
 ### Changing the default rendering settings
 By default, we've set up MSCS to render the overworld, the nether, the end, and cave systems 
 with Overviewer's "normal" render settings. However, Overviewer has many different render 
@@ -64,5 +65,5 @@ Omit the world name to map all worlds.
 
 Please note that in order for the map to update new changes in the world,
 you need to run Overviewer periodically.
-Please see [scheduling mapping](#scheduling-mapping) for more information.
+Please see [scheduling tasks](https://minecraftservercontrol.github.io/docs/mscs/scheduling-tasks) for more information.
 
