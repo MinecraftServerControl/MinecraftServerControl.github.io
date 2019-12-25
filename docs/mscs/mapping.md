@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Mapping
-nav_order: 2
+nav_order: 6
 permalink: /docs/mscs/mapping
 ---
 
