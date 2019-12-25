@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Backups
-nav_order: 3
+nav_order: 7
 permalink: /docs/mscs/backups
 ---
 
