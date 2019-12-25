@@ -2,6 +2,7 @@
 layout: default
 title: Adjusting world & server properties
 nav_order: 4
+has_children: true
 permalink: /docs/mscs/adjusting-world-server-properties
 ---
 
