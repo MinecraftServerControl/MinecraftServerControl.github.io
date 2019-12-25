@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Scheduling tasks
-nav_order: 5
+nav_order: 7
 has_children: true
-permalink: docs/mscs/scheduling-tasks
+permalink: /docs/mscs/scheduling-tasks
 ---
 
 # Scheduling tasks
