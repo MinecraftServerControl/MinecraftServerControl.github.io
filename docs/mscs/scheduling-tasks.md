@@ -11,11 +11,22 @@ permalink: /docs/mscs/scheduling-tasks
 Schedule automatic backups, restarts, mapping and more 
 using MSCS and cron, a scheduler software built into linux
 that can run programs on a set interval of time. 
-Any MSCS command can be scheduled using cron. We list 
-instructions for the most popular commands below.
 {: .fs-6 .fw-300 }
 
-Below is an example of one way you could setup backups via `cron` to backup a
+---
+
+Any MSCS command can be scheduled using cron. Commands
+that may be of interest include:
+
+```
+mscs map
+mscs backup
+mscs log-rotate
+mscs restart
+mscs broadcast
+```
+
+Below is an example of one way you could setup to backup a
 world every 2 hours:
 
 Edit the crontab file for the `minecraft` user using `sudo`:
