@@ -33,7 +33,7 @@ To schedule backups so they run periodically, please see [scheduling tasks](http
 ---
 
 ## Viewing & restoring backups
-Once you've scheduled backups, you can view the backups created by running the `mscs list-backups` command, and restore a backup using the `mscs restore-backup` command. 
+You can view the backups created by running the `mscs list-backups` command, and restore a backup using the `mscs restore-backup` command. 
 
 You can specify how long to keep backups by changing the
 `mscs-backup-duration` property in `mscs.defaults` or the world's `mscs.properties` config file (see [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)).
