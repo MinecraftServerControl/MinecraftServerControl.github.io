@@ -26,6 +26,8 @@ mscs restart
 mscs broadcast
 ```
 
+---
+
 Below is an example of one way you could setup to backup a
 world every 2 hours:
 
