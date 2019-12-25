@@ -5,20 +5,18 @@ nav_order: 6
 permalink: /docs/mscs/command-reference
 ---
 
-## Command Reference
+# Command Reference
 All commands below assume that you are running them as either the `minecraft`
 user or as `root` (through sudo).
 
 Note: If the script is run as the `root` user, all important server processes
 will be started using the `minecraft` user instead for security purposes.
 
-```bash
-Usage:  mscs [<options>] <action>
-```
+Usage:  `mscs [<options>] <action>`
 
 Actions:
 
-```bash
+```
 start <world1> <world2> <...>
   Start the Minecraft world server(s).  Start all world servers by default.
 
