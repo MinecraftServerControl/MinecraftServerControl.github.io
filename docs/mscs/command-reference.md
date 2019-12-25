@@ -119,9 +119,10 @@ force-update <world1> <world2> <...>
 query <world1> <world2> <...>
   Run a detailed Query on the Minecraft world server(s). Run a detailed
   query on all world servers by default.
+```
 
 Options:
-
+```
 -c <config_file>
   Read configuration from <config_files> instead of default locations.
 
