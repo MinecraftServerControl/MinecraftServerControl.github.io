@@ -28,6 +28,7 @@ By default, backups are saved in `/opt/mscs/backups`. The location backups are s
 ---
 
 ## Scheduling backups
+To schedule backups so they run periodically, please see [scheduling tasks](https://minecraftservercontrol.github.io/docs/mscs/scheduling-tasks).
 
 ---
 
