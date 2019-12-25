@@ -16,7 +16,7 @@ nav_order: 2
 
 ---
 
-# Setting up mapping
+## Setting up mapping
 
 Overviewer is the mapping software that MSCS uses. 
 It has pretty straightforward documentation to download and install the software:
@@ -30,8 +30,9 @@ supported systems, or build your own binary from source if needed.
 __Once you follow the install page, come back here for further instructions.
 Don't read the "Running the Overviewer" section, as it will differ in MSCS.__
 
-## Configuring Overviewer
-In the `mscs.defaults` file (see [](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)), 
+### Configuring Overviewer
+In the `mscs.defaults` file 
+(see [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)), 
 you'll find various Overviewer mapping settings which you change to your liking.
 We've listed the map-related settings below:
     
@@ -41,7 +42,9 @@ We've listed the map-related settings below:
    to your web-server folder, e.g. `var/www/` (or symlink your web-server folder to this value).
 * `mscs-maps-url`: The link to be displayed in chat to view the maps when mapping is complete. 
 
-# Mapping world(s)
+---
+
+## Mapping world(s)
 After you've changed the settings, run:
 
     mscs map <world>
@@ -49,13 +52,11 @@ After you've changed the settings, run:
 Where `<world>` is the name of the world you would like to get mapped.
 Omit the world name to map all worlds.
 
-If you get a `Permission denied` error, please see the [Troubleshooting section](#troubleshooting).
-
 Please note that in order for the map to update new changes in the world,
 you need to run Overviewer periodically.
 Please see [scheduling mapping](#scheduling-mapping) for more information.
 
-## Changing the default rendering settings
+### Changing the default rendering settings
 By default, we've set up MSCS to render the overworld, the nether, the end, and cave systems 
 with Overviewer's "normal" render settings. However, Overviewer has many different render 
 modes which you can apply to as many or as few dimensions of your world(s) as you like.
