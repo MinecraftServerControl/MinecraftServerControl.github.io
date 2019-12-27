@@ -22,7 +22,7 @@ By default, every world in MSCS inherits from a global server properties file ca
 These defaults can be overidden on a per-world basis by creating an `mscs.properties` file in the directories of the
 world(s) you wish to overwrite. Only properties that will be changed need to be copied into the `mscs.properties` file--the MSCS script will use the global `mscs.defaults` for any properties that are left out.
 
-Instructions to configure the properties for major server mods can be found on the sidebar--specifically [PaperMC)(https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/papermc),
+Instructions to configure the properties for major server mods can be found on the sidebar--specifically [PaperMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/papermc),
 [SpigotMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/spigotmc), [Forge](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/forge), [BungeeCord](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/bungeecord), and [Technic/Tekkit Pack](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/technic-tekkit-pack).
 
 ---
