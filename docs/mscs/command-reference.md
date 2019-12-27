@@ -13,8 +13,7 @@ Note: If the script is run as the `root` user, all important server processes
 will be started using the `minecraft` user instead for security purposes.
 
 Usage:  `mscs [<options>] <action>`
-
-> <small>The `[<options>]` argument is optional and is not typically used. We list options at the end of this page.</small>
+<small>The `[<options>]` argument is optional and is not typically used. We list options at the end of this page.</small>
 ---
 
 Actions:
