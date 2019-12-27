@@ -14,7 +14,7 @@ will be started using the `minecraft` user instead for security purposes.
 
 Usage:  `mscs [<options>] <action>`
 
-<br><small>The `[<options>]` argument is optional and is not typically used. 
+<small>The `[<options>]` argument is optional and is not typically used. 
  We list options at the end of this page.</small>
 ---
 
