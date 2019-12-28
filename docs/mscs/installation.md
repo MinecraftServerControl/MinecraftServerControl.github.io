@@ -110,7 +110,7 @@ The Minecraft server software will be automatically downloaded to the following 
 
 ---
 
-## Multi-User Installation
+## Multi-user setup
 [MSCS] has the ability to store server and world data on a user-by-user basis, allowing multiple users to run their respective worlds while preserving the data of other user worlds.
 
 > Example: Two user accounts are available on a server: `bob` and `jason`.  
@@ -118,8 +118,7 @@ The Minecraft server software will be automatically downloaded to the following 
   `jason` should only be able to run and modify Jason's worlds.  
   Each user can have their own properties and world locations
 
-### Setup
-To accomplish this, direct users to use `msctl` in place of `mscs` when running commands (see [command reference]). That's it!
+To accomplish this, direct users to use `msctl` in place of `mscs` when running commands (see [command reference](https://minecraftservercontrol.github.io/docs/mscs/command-reference)). That's it!
 
 For instance, to create a world named `world`:
 
