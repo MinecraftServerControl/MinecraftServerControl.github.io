@@ -111,7 +111,7 @@ The Minecraft server software will be automatically downloaded to the following 
 ---
 
 ## Multi-user setup
-[MSCS] has the ability to store server and world data on a user-by-user basis, allowing multiple users to run their respective worlds while preserving the data of other user worlds.
+MSCS has the ability to store server and world data on a user-by-user basis, allowing multiple users to run their respective worlds while preserving the data of other user worlds.
 
 > Example: Two user accounts are available on a server: `bob` and `jason`.  
   `bob` should only be able to run and modify Bob's worlds.  
@@ -132,4 +132,4 @@ For all commands, replace the `mscs` prefix with `msctl`.
 
 By default, the location of each users' worlds will be saved to `$HOME/mscs/worlds`, where `$HOME` is the home directory of the user. So if `bob` is logged in, and Bob's home directory is `/home/bob`, Bob's worlds will be saved to `/home/bob/mscs/worlds`.
 
-**Please note: [MSCS] currently does not check if a server port is free for use when creating or running worlds. All users will need to coordinate which ports are being used so no conflicts occur.**
+**Please note: MSCS currently does not check if a server port is free for use when creating or running worlds. All users will need to coordinate which ports are being used so no conflicts occur.**
