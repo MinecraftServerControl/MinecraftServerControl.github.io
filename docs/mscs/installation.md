@@ -59,7 +59,6 @@ yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol
 ---
 
 ## Quick start 
-
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
 git clone https://github.com/MinecraftServerControl/mscs.git && cd mscs
@@ -67,6 +66,10 @@ sudo make install
 ```
 This will, by default, create a user to perform MSCS tasks 
 called `minecraft` and give it access to write in the `/opt/mscs` folder.
+If there are no errors, then you can proceed to use the script. 
+
+[Getting started](https://minecraftservercontrol.github.io/docs/mscs/getting-started){: .btn .btn-purple }
+
 
 ---
 
