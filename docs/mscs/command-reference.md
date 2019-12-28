@@ -11,7 +11,7 @@ user or as `root` (through sudo). Please note that if the script is run as the
 `root` user, all important server processes will be started using the `minecraft`
 user instead for security purposes.
 
-Usage:  `mscs [<options>] <action>`
+__Usage:  `mscs [<options>] <action>`__
 
 {: .fs-1 }
 The `[<options>]` argument is optional and is not typically used. We list options
