@@ -7,15 +7,15 @@ permalink: /docs/mscs/command-reference
 
 # Command Reference
 All commands below assume that you are running them as either the `minecraft`
-user or as `root` (through sudo).
-
-Note: If the script is run as the `root` user, all important server processes
-will be started using the `minecraft` user instead for security purposes.
+user or as `root` (through sudo). Please note that if the script is run as the
+`root` user, all important server processes will be started using the `minecraft`
+user instead for security purposes.
 
 Usage:  `mscs [<options>] <action>`
 
 {: .fs-1 }
-The `[<options>]` argument is optional and is not typically used. We list options at the end of this page.
+The `[<options>]` argument is optional and is not typically used. We list options
+at the end of this page.
 
 ---
 
