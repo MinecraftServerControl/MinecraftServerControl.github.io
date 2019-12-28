@@ -33,9 +33,13 @@ above, all MSCS worlds inherit properties from this file unless the properties
 are overridden in the world's `mscs.properties` file. 
 
 This `mscs.defaults` file can be found at
-`/opt/mscs/mscs.defaults`. When using the `msctl` script in multi-user mode,
+`/opt/mscs/mscs.defaults`. 
+
+When using the `msctl` script in multi-user mode,
 the `mscs.defaults` file can be found at either `$HOME/mscs.defaults` or
-`$HOME/.config/mscs/mscs.defaults`.
+`$HOME/.config/mscs/mscs.defaults` (both are valid locations).
+Please note that `$HOME` represents the 
+home directory of the user that is running the script.
 
 Listed below are the global server properties currently available. The properties that are set
 already are the defaults that come with the script (properties that are empty
