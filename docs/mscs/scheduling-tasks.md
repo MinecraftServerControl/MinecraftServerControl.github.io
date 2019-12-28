@@ -9,7 +9,7 @@ permalink: /docs/mscs/scheduling-tasks
 {: .no_toc }
 
 Schedule automatic backups, restarts, mapping and more 
-using MSCS and cron, a scheduler software built into linux
+using MSCS and cron, a scheduler software built into UNIX
 that can run programs on a set interval of time. 
 {: .fs-6 .fw-300 }
 
