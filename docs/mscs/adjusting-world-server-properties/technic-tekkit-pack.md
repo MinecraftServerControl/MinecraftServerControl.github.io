@@ -7,6 +7,7 @@ permalink: /docs/mscs/adjusting-world-server-properties/technic-tekkit-pack
 ---
 
 # Technic/Tekkit Pack
+---
 This example was written for [Attack of the B-Team](http://www.technicpack.net/modpack/attack-of-the-bteam.552556) version 1.0.9c
 
 This works for many of the Technic/Tekkit based modpacks, although some settings may need to be adjusted for different modpacks.
