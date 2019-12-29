@@ -7,9 +7,9 @@ permalink: /docs/mscs/adjusting-world-server-properties/bungeecord
 ---
 
 ## BungeeCord
-[BungeeCord] is a proxy server that sits between the Minecraft client and server that allows players on a server to easily transfer between worlds (regardless of whether the world is running on vanilla, Forge, SpigotMC, etc). The setup for BungeeCord can be rather complex. To fully understand the configuration options available, visit the [BungeeCord Configuration Guide].
+[BungeeCord](https://www.spigotmc.org/wiki/bungeecord/) is a proxy server that sits between the Minecraft client and server that allows players on a server to easily transfer between worlds (regardless of whether the world is running on vanilla, Forge, SpigotMC, etc). The setup for BungeeCord can be rather complex. To fully understand the configuration options available, visit the [BungeeCord Configuration Guide](https://www.spigotmc.org/wiki/bungeecord-configuration-guide/).
 
-Although BungeeCord is not a normal Minecraft server, [MSCS] is able to control the server as if it were with a little work. Lets start by creating a fake world named `lobby` on the default port of `25565`.
+Although BungeeCord is not a normal Minecraft server, MSCS is able to control the server as if it were with a little work. Lets start by creating a fake world named `lobby` on the default port of `25565`.
 
     mscs create lobby 25565
 
@@ -79,7 +79,7 @@ ip_forward: false
 online_mode: true
 ```
 
-Change to the `/opt/mscs/server/` directory, [download][download bungee] the BungeeCord server jar `BungeeCord.jar`, and run the following as the `minecraft` user (`sudo su minecraft`):
+Change to the `/opt/mscs/server/` directory, [download](http://ci.md-5.net/job/BungeeCord/) the BungeeCord server jar `BungeeCord.jar`, and run the following as the `minecraft` user (`sudo su minecraft`):
 
     cd /opt/mscs/server
     wget http://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
