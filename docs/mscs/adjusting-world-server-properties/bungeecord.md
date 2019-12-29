@@ -35,7 +35,7 @@ Modify the `mscs.properties` file and add/alter these lines:
 
 Create a `config.yml` file that will apply for the worlds on this server. For example: `alpha` and `beta` on ports `25566` and `25567` respectively. Note, change the name of the admin from `username` to the Minecraft player name that will be administering BungeeCord.
 
-```YAML
+```
 groups:
   username:
   - admin
