@@ -6,8 +6,8 @@ parent: Adjusting world & server properties
 permalink: /docs/mscs/adjusting-world-server-properties/forge
 ---
 
-## Forge
-[Forge] has an easy to use installer that can be used to install all of the needed files to run a Forge server, starting with version `1.6.2-9.10.0.818`. To install a version compatible with Minecraft 1.8.9, [download][download forge] the Forge installer `forge-x.x-xx.xx.x.xxxx-installer` and run the following as the `minecraft` user (`sudo su minecraft`):
+# Forge
+[Forge](http://www.minecraftforge.net/) has an easy to use installer that can be used to install all of the needed files to run a Forge server, starting with version `1.6.2-9.10.0.818`. To install a version compatible with Minecraft 1.8.9, [download](http://files.minecraftforge.net/) the Forge installer `forge-x.x-xx.xx.x.xxxx-installer` and run the following as the `minecraft` user (`sudo su minecraft`):
 
     cd /opt/mscs/server
     wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.8.9-11.15.1.1722/forge-1.8.9-11.15.1.1722-installer.jar
