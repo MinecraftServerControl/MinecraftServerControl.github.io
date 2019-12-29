@@ -6,7 +6,7 @@ parent: Adjusting world & server properties
 permalink: /docs/mscs/adjusting-world-server-properties/bungeecord
 ---
 
-## BungeeCord
+# BungeeCord
 [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/) is a proxy server that sits between the Minecraft client and server that allows players on a server to easily transfer between worlds (regardless of whether the world is running on vanilla, Forge, SpigotMC, etc). The setup for BungeeCord can be rather complex. To fully understand the configuration options available, visit the [BungeeCord Configuration Guide](https://www.spigotmc.org/wiki/bungeecord-configuration-guide/).
 
 Although BungeeCord is not a normal Minecraft server, MSCS is able to control the server as if it were with a little work. Lets start by creating a fake world named `lobby` on the default port of `25565`.
