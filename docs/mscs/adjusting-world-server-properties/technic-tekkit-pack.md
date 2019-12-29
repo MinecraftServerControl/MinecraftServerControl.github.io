@@ -6,8 +6,8 @@ parent: Adjusting world & server properties
 permalink: /docs/mscs/adjusting-world-server-properties/technic-tekkit-pack
 ---
 
-## Technic/Tekkit Pack
-This example was written for [Attack of the B-Team][bteam] version 1.0.9c
+# Technic/Tekkit Pack
+This example was written for [Attack of the B-Team](http://www.technicpack.net/modpack/attack-of-the-bteam.552556) version 1.0.9c
 
 This works for many of the Technic/Tekkit based modpacks, although some settings may need to be adjusted for different modpacks.
 
@@ -35,7 +35,7 @@ These settings can be used in case `server.properties` is overwritten or deleted
     enable-query=true
     query.port=25565
 
-[Download][bteam] the mod pack to the world directory
+[Download](http://www.technicpack.net/modpack/attack-of-the-bteam.552556) the mod pack to the world directory
 
     wget http://servers.technicpack.net/Technic/servers/bteam/BTeam_Server_v1.0.12c.zip
 
