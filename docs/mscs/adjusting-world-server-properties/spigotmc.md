@@ -6,8 +6,8 @@ parent: Adjusting world & server properties
 permalink: /docs/mscs/adjusting-world-server-properties/spigotmc
 ---
 
-## SpigotMC
-Installing SpigotMC is very similar to installing Forge. Change to the `/opt/mscs/server/` directory, [download][download spigot] the SpigotMC installer `BuildTools.jar`, and run the following as the `minecraft` user (`sudo su minecraft`):
+# SpigotMC
+Installing [SpigotMC](https://www.spigotmc.org/wiki/spigot/) is very similar to installing Forge. Change to the `/opt/mscs/server/` directory, [download](https://hub.spigotmc.org/jenkins/job/BuildTools/) the SpigotMC installer `BuildTools.jar`, and run the following as the `minecraft` user (`sudo su minecraft`):
 
     cd /opt/mscs/server
     wget https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar
