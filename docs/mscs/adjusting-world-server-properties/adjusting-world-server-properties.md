@@ -240,7 +240,7 @@ The following variables may be used in some of the values of the above keys:
 
 ## Common configuration settings
 
-### Set the world's server version
+### Set world's server version
 The examples below assume you are editing the world's `mscs.properties`.
 
 Use a specific release:
@@ -262,7 +262,7 @@ mscs-server-version=14w11b
 ```
 
 
-### Set the world's memory
+### Set world's memory
 The example below assumes you are editing the world's `mscs.properties`.
 
 ```
@@ -283,7 +283,7 @@ Example setting:
 mscs-jvm-args=-Dlog4j.configurationFile=/opt/mscs/log4j2.xml
 ```
 
-### Set custom java command
+### Set world's custom java command
 The example below assumes you are editing the world's `mscs.properties`.
 
 Do you want a crazy Java command? You can do it with `mscs-server-command`:
