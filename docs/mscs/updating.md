@@ -17,9 +17,10 @@ permalink: /docs/mscs/updating
 ---
 
 ## Updating MSCS
+Periodically Minecraft Server Control Script is updated to address bug fixes and add new features.
 
 ### Quick-start installation
-Periodically Minecraft Server Control Script is updated to address bug fixes and add new features. If you followed the [quick start installation](https://minecraftservercontrol.github.io/docs/mscs/installation#quick-start), you can update MSCS by `cd`'ing into the folder where you downloaded MSCS. Then, type:
+If you followed the [quick start installation](https://minecraftservercontrol.github.io/docs/mscs/installation#quick-start), you can update MSCS by `cd`'ing into the folder where you downloaded MSCS. Then, type:
 
 ```bash
 git pull
