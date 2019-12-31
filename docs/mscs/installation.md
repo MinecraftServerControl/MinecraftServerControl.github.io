@@ -17,7 +17,6 @@ permalink: /docs/mscs/installation
 ---
 
 ## Dependencies
-
 We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
@@ -56,6 +55,16 @@ installed by running:
 ```bash
 yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
+
+### Configuring the firewall / NAT
+If you are going to run the Minecraft server on your computer, you may need to route some ports to the server (if you are running the Minecraft server with a hosting company, they most likely already have the ports open). Instructions on how to accomplish this are beyond the scope of this document, but here are some things you will need to know:
+
+* The default port for the Minecraft server is: 25565.
+* If you wish to run multiple world servers using this script, you may want to open a range of ports (for example 25565 - 25575).
+* If you are using BungeeCord, you will most likely need to only open the default port: 25565.
+
+See the [iptables.rules](https://github.com/MinecraftServerControl/mscs/blob/master/iptables.rules) file for a very basic set of rules that you can use with the Iptables firewall.
+
 ---
 
 ## Quick start 
