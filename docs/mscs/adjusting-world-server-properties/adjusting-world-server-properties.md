@@ -24,7 +24,7 @@ world(s) you wish to overwrite. Only properties that will be changed need to be 
 
 Instructions to configure the properties for major server mods can be found on the sidebar--specifically [PaperMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/papermc),
 [SpigotMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/spigotmc), [Forge](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/forge), [BungeeCord](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/bungeecord), and [Technic/Tekkit Pack](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/technic-tekkit-pack). 
-Additionally, we list examples of [common configuration settings at the end of this document](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties#common-configuration-settings).
+Additionally, we list examples of [common configuration settings](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties#common-configuration-settings)at the end of this page.
 
 ---
 
