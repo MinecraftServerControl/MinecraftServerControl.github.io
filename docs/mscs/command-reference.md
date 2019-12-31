@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Command reference
-nav_order: 9
+nav_order: 10
 permalink: /docs/mscs/command-reference
 ---
 
