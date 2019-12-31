@@ -42,7 +42,7 @@ aux_links:
     - "//github.com/MinecraftServerControl/mscs"
 
 # Footer content appears at the bottom of every page's main content
-footer_content: "Copyright &copy; 2011-2019 Jason M. Wood. Distributed by a <a href=\"https://github.com/MinecraftServerControl/mscs/blob/master/LICENSE\">BSD 2-Clause Simplified license.</a>"
+footer_content: "MSCS is copyright &copy; 2011-2020 Jason M. Wood. <a href=\"https://github.com/MinecraftServerControl/mscs/blob/master/LICENSE\">License</a> | <a href=\"https://github.com/MinecraftServerControl/mscs#disclaimer\">Disclaimer</a> | <a href=\"https://github.com/MinecraftServerControl/mscs/blob/master/CODE_OF_CONDUCT.md\">Code of Conduct</a>"
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
