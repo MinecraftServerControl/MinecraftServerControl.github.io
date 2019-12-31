@@ -16,6 +16,8 @@ chmod -R u+w /opt/mscs
 chown -R minecraft:minecraft /opt/mscs
 ```
 
+---
+
 # Issues
 
 We have only tested this code in a Debian/Ubuntu environment, but there is no reason that it shouldn't work in any appropriately configured UNIX-like environment, including Apple Mac OSX and the other BSD variants, with only minor modifications. If you experience errors running this script, please post a copy of the error message and a note detailing the operating environment where the error occurs to the support thread, and we will try to work out a solution with you
