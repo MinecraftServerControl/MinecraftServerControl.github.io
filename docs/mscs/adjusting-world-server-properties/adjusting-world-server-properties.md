@@ -23,7 +23,8 @@ These defaults can be overidden on a per-world basis by creating an `mscs.proper
 world(s) you wish to overwrite. Only properties that will be changed need to be copied into the `mscs.properties` file--the MSCS script will use the global `mscs.defaults` for any properties that are left out.
 
 Instructions to configure the properties for major server mods can be found on the sidebar--specifically [PaperMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/papermc),
-[SpigotMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/spigotmc), [Forge](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/forge), [BungeeCord](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/bungeecord), and [Technic/Tekkit Pack](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/technic-tekkit-pack).
+[SpigotMC](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/spigotmc), [Forge](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/forge), [BungeeCord](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/bungeecord), and [Technic/Tekkit Pack](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties/technic-tekkit-pack). 
+Additionally, we list examples of [common configuration settings at the end of this document](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties#common-configuration-settings).
 
 ---
 
@@ -230,3 +231,11 @@ The following variables may be used in some of the values of the above keys:
 * $INITIAL_MEMORY - The initial amount of memory for the server.
 * $MAXIMUM_MEMORY - The maximum amount of memory for the server.
 * $SERVER_LOCATION - The location of the server .jar file.
+
+---
+
+## Common configuration settings
+
+### Set the server version
+
+### Set memory
