@@ -239,10 +239,9 @@ The following variables may be used in some of the values of the above keys:
 ---
 
 ## Common configuration settings
+The examples below assumes you are editing the world's `mscs.properties`.
 
 ### Set world's server version
-The examples below assume you are editing the world's `mscs.properties`.
-
 Use a specific release:
 ```
 mscs-server-version=1.14
@@ -263,8 +262,6 @@ mscs-server-version=14w11b
 
 
 ### Set world's memory
-The example below assumes you are editing the world's `mscs.properties`.
-
 ```
 # Assign the initial amount of memory for the server.
 mscs-initial-memory=128M
@@ -274,8 +271,6 @@ mscs-maximum-memory=2048M
 ```
 
 ### Set world's logging setting
-The example below assumes you are editing the world's `mscs.properties`.
-
 Want to customize the server logs? You can configure log4j by setting `mscs-jvm-args`.
 Example setting:
 
@@ -284,8 +279,6 @@ mscs-jvm-args=-Dlog4j.configurationFile=/opt/mscs/log4j2.xml
 ```
 
 ### Set world's custom java command
-The example below assumes you are editing the world's `mscs.properties`.
-
 Do you want a crazy Java command? You can do it with `mscs-server-command`:
 ```
 mscs-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY -Xincgc -XX:NewRatio=3 -XX:+UseThreadPriorities -XX:CMSFullGCsBeforeCompaction=1 -XX:SoftRefLRUPolicyMSPerMB=2048 -XX:+CMSParallelRemarkEnabled -XX:+UseParNewGC -XX:+UseAdaptiveSizePolicy -XX:+DisableExplicitGC -Xnoclassgc -oss4M -ss4M -XX:+UseFastAccessorMethods -XX:CMSInitiatingOccupancyFraction=90 -XX:+UseConcMarkSweepGC -XX:UseSSE=4 -XX:+UseCMSCompactAtFullCollection -XX:ParallelGCThreads=8 -XX:+AggressiveOpts -Djava.awt.headless=true -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
