@@ -11,8 +11,10 @@ If you get a `permission denied` error when attempting to
 run a `mscs` command, please ensure that the `minecraft`
 user has the correct permissions set:
 
+```bash
 chmod -R u+w /opt/mscs
 chown -R minecraft:minecraft /opt/mscs
+```
 
 # Issues
 
