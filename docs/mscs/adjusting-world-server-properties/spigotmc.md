@@ -15,7 +15,7 @@ Installing [SpigotMC](https://www.spigotmc.org/wiki/spigot/) is very similar to 
 
 This will build the `spigot-X.X.X.jar` server file.
 
-Create a new server:
+Create a new server (if necessary):
 
     mscs create spigot 25565
 
