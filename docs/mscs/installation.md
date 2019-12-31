@@ -79,6 +79,7 @@ If there are no errors, then you can proceed to use the script.
 
 [Getting started](https://minecraftservercontrol.github.io/docs/mscs/getting-started){: .btn .btn-purple }
 
+If you get a `permission denied` error, please see the [troubleshooting](https://minecraftservercontrol.github.io/docs/mscs/troubleshooting-issues) page.
 
 ---
 
