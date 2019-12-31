@@ -29,7 +29,8 @@ specific network interface (e.g. `127.0.0.1` to enforce local access only).
 Afterwards, start the server via `mscs start [world]` where `world` is the
 name of the world. The world will then shut down because you have to accept
 the EULA. The EULA can be found in `/opt/mscs/worlds/myWorld` where `myWorld`
-is the name given to the world you created.
+is the name given to the world you created. Once this is accepted,
+you can start the world and it will successfully load up.
 
 Please note that, by default, the world created will be 
 running the latest server version. See [adjusting world & server properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties)
