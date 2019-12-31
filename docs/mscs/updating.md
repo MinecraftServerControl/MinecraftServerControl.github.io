@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Updating
-nav_order: 9
+nav_order: 8
 permalink: /docs/mscs/updating
 ---
 
