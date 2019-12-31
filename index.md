@@ -3,7 +3,7 @@ layout: default
 title: Home
 nav_order: 1
 description: "Minecraft Server Control Script (MSCS) is a server-management script for UNIX and Linux powered Minecraft servers."
-permalink: /docs
+permalink: /docs/mscs
 redirect_from: "/"
 ---
 
