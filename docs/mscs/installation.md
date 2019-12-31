@@ -68,9 +68,6 @@ See the [iptables.rules](https://github.com/MinecraftServerControl/mscs/blob/mas
 ---
 
 ## Quick start 
-Recommended
-{: .label }
-
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
 git clone https://github.com/MinecraftServerControl/mscs.git && cd mscs
