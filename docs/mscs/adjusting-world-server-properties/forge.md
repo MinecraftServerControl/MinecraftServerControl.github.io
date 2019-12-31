@@ -15,7 +15,7 @@ permalink: /docs/mscs/adjusting-world-server-properties/forge
 
 The installer should install the forge server jar to `/opt/mscs/server/forge-1.8-11.14.2.1434-universal.jar` and a bunch of library files in `/opt/mscs/server/libraries/`.
 
-Create a new server:
+Create a new server (if necessary):
 
     mscs create forge 25565
 
