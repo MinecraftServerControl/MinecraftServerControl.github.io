@@ -43,7 +43,7 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
-</small>
+
 
 If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
