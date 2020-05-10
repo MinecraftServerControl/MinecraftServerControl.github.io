@@ -93,7 +93,6 @@ MSCS has three commands to list worlds: `mscs ls`, `mscs list`, and `mscs status
 
 ```bash
 $ mscs ls
-
 alex: 25567
 test: 25565
 creative: 25562 (disabled)
@@ -104,7 +103,6 @@ forge: 25563 (disabled)
 
 ```bash
 $ mscs list
-
 alex:
   motd=A Minecraft Server    server-ip=    server-port=25567    max-players=20    level-type=default    online-mode=true
   
@@ -117,7 +115,6 @@ test
 
 ```bash
 $ mscs status
-
 Minecraft Server Status:
   alex: not running.
   test: running version 1.15.2 (1 of 20 users online).
