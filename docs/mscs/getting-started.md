@@ -124,7 +124,7 @@ Minecraft Server Status:
 
 ```
 
- `mscs status` may take a few seconds to return results because it runs a query. Additionally, during the world's first 20 seconds after startup, the query will return a `running: query server offline` message as it waits for the world to startup. Please try running the query command again after a short wait if you receive this message.
+ `mscs status` may take a few seconds to return results because it runs a query. Additionally, during the world's first 20 seconds after startup, the status will return a `running: query server offline` message as it waits for the world to startup. Please try running the status command again after a short wait if you receive this message.
  
 
 ---
