@@ -61,11 +61,11 @@ Now I simply tell mscs to create a new world from the current directory:
 mscs import . alpha 25565
 ```
 
-Alternatively, I could have simply provided the world's directory that sits in
-my home folder instead of changing directories:
+Alternatively, I could have provided the directory the `alpha` world resides in (named `minecraft_world`
+and located in my Documents folder in the example below) instead of changing directories:
 
 ```bash
-mscs import ~/minecraft_world alpha 25565
+mscs import Documents/minecraft_world alpha 25565
 ```
 
 Please note that, by default, the world created will be 
