@@ -12,6 +12,10 @@ redirect_from: "/"
 Minecraft Server Control Script (MSCS) is a server-management script for UNIX and Linux powered Minecraft servers.
 {: .fs-6 .fw-300 }
 
+[Installation](/docs/mscs/installation){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/MinecraftServerControl/mscs){: .btn .fs-5 .mb-4 .mb-md-0 }
+
+---
+
 Features include:
 
 * Run multiple Minecraft worlds.
@@ -24,5 +28,4 @@ Features include:
 * Automatically backup worlds, remove backups older than X days, and restart worlds.
 * Update the server and client software automatically.
 * Send commands to a world server from the command line.
-
-[Installation](/docs/mscs/installation){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/MinecraftServerControl/mscs){: .btn .fs-5 .mb-4 .mb-md-0 }
+* And more!
