@@ -67,7 +67,7 @@ Please note that in order for the map to update new changes in the world,
 you need to run Overviewer periodically.
 Please see [scheduling tasks](https://minecraftservercontrol.github.io/docs/mscs/scheduling-tasks) for more information
 
-**Bug Note**: as of May 2020, there is a bug in Overviewer that occurs in certain system installations that have multiple Minecraft versions located in the `/opt/mscs/.minecraft/versions` folder. In systems with this bug, the `mscs map` command will hang and mapping will never complete ([see issue #238](https://github.com/MinecraftServerControl/mscs/issues/238)). If running the `mscs map` command hangs and never completes, and you have multiple versions of minecraft located in the `/opt/mscs/.minecraft/versions` folder, please try deleting all versions except the version that you need for your world and attempt mapping again. If you're still having issues, [please submit an issue on Github](https://github.com/MinecraftServerControl/mscs/issues/).
+**Bug Note**: as of May 2020, there is a bug in Overviewer that occurs in certain system installations that have multiple Minecraft versions located in the `/opt/mscs/.minecraft/versions` folder. In systems with this bug, the `mscs map` command will hang and mapping will never complete ([see Issue #238](https://github.com/MinecraftServerControl/mscs/issues/238)). If running the `mscs map` command hangs and never completes, and you have multiple versions of minecraft located in the `/opt/mscs/.minecraft/versions` folder, please try deleting all versions except the version that you need for your world and attempt mapping again. If you're still having issues, [please submit an issue on Github](https://github.com/MinecraftServerControl/mscs/issues/).
 
 .
 
