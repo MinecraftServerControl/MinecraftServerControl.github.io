@@ -22,7 +22,7 @@ most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
 
-* Java JRE                   - The Minecraft server software requires this. 
+* Java JRE                   - The Minecraft server software requires this.
                                **As of Minecraft 1.12, Java 8 is required.**
 * Perl                       - Most, if not all, Unix and Linux like systems
                                have this preinstalled.
@@ -43,9 +43,15 @@ requirements that this script has that may not already be in place:
                                Minecraft server.
 * Iptables                   - Although not explicitly required, a good
                                firewall should be installed.
+* Sudo                       - Run processes under other user and groups
 
 
-If you are running Debian or Ubuntu, you can make sure that these are
+If you are running Debian, you can make sure that these are
+installed by running:
+```bash
+apt install sudo default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget git rdiff-backup rsync socat iptables
+```
+If you are running Ubuntu, you can make sure that these are
 installed by running:
 ```bash
 sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget git rdiff-backup rsync socat iptables
@@ -67,15 +73,15 @@ See the [iptables.rules](https://github.com/MinecraftServerControl/mscs/blob/mas
 
 ---
 
-## Quick start 
+## Quick start
 The fastest way to install the script is to clone the git repository and run the included Makefile:
 ```bash
 git clone https://github.com/MinecraftServerControl/mscs.git && cd mscs
 sudo make install
 ```
-This will, by default, create a user to perform MSCS tasks 
+This will, by default, create a user to perform MSCS tasks
 called `minecraft` and give it access to write in the `/opt/mscs` folder.
-If there are no errors, then you can proceed to use the script. 
+If there are no errors, then you can proceed to use the script.
 
 [Getting started](https://minecraftservercontrol.github.io/docs/mscs/getting-started){: .btn .btn-purple }
 
