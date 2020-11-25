@@ -1,27 +1,26 @@
 ---
 layout: default
-title: Command reference
+title: Command Reference
 nav_order: 10
 permalink: /docs/mscs/command-reference
 ---
 
 # Command Reference
-All commands below assume that you are running them as either the `minecraft`
-user or as `root` (through sudo). Please note that if the script is run as the
-`root` user, all important server processes will be started using the `minecraft`
-user instead for security purposes.
+
+All commands below assume that you are running them as either the `minecraft` user or as `root` (through sudo).
+Please note that if the script is run as the `root` user, all important server processes will be started using the
+`minecraft` user instead for security purposes.
 
 __Usage:  `mscs [<options>] <action>`__
 
 {: .fs-1 }
-The `[<options>]` argument is optional and is not typically used. We list options
-at the end of this page.
+The `[<options>]` argument is optional and is not typically used. We list options at the end of this page.
 
 ---
 
-Actions:
+## Actions
 
-```
+```plain
 start <world1> <world2> <...>
   Start the Minecraft world server(s).  Start all world servers by default.
 
@@ -124,8 +123,9 @@ query <world1> <world2> <...>
   query on all world servers by default.
 ```
 
-Options:
-```
+## Options
+
+```plain
 -c <config_file>
   Read configuration from <config_files> instead of default locations.
 

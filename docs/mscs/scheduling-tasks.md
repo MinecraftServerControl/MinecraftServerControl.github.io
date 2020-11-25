@@ -1,24 +1,22 @@
 ---
 layout: default
-title: Scheduling tasks
+title: Scheduling Tasks
 nav_order: 7
 permalink: /docs/mscs/scheduling-tasks
 ---
 
-# Scheduling tasks
+# Scheduling Tasks
 {: .no_toc }
 
-Schedule automatic backups, restarts, mapping and more 
-using MSCS and cron, a scheduler software built into UNIX
-that can run programs on a set interval of time. 
+Schedule automatic backups, restarts, mapping and more using MSCS and cron, a scheduler software built into UNIX that
+can run programs on a set interval of time.
 {: .fs-6 .fw-300 }
 
 ---
 
-Any MSCS command can be scheduled using cron. Commands
-that may be of interest include:
+Any MSCS command can be scheduled using cron. Commands that may be of interest include:
 
-```
+```bash
 mscs map
 mscs backup
 mscs log-rotate
@@ -28,8 +26,7 @@ mscs broadcast
 
 ---
 
-Below is an example of one way you could setup to backup a
-world every 2 hours:
+Below is an example of one way you could setup to backup a world every 2 hours:
 
 Edit the crontab file for the `minecraft` user using `sudo`:
 
@@ -48,20 +45,16 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 0 */2 * * *  mscs backup myWorld
 ```
 
-* We define HOME and PATH because `cron` may not do it for us. The HOME and PATH we've
-  defined above are the default values set with the default installation.
-  If you did  not follow the default installation, *Make sure that
-  PATH and HOME match the environment on your system.* 
+- We define `HOME` and `PATH` because `cron` may not do it for us. The `HOME` and `PATH` we've defined above are the
+  default values set with the default installation. If you did not follow the default installation, *Make sure that
+  `PATH` and `HOME` match the environment on your system.*
+- `0 */2 * * *` is the time interval to backup. This particular expression means backup every 2 hours.
+  We list some more common examples below.
+- `myWorld` is the name of the world you wish to backup. Omitting this will backup all worlds.
 
-* `0 */2 * * *` is the time interval to backup. This particular expression
-  means backup every 2 hours. We list some more common examples below.
+---
 
-* `myWorld` is the name of the world you wish to backup. Omitting this will
-  backup all worlds.
- 
- ---
- 
-## Scheduling examples
+## Scheduling Examples
 
 Run the backup hourly.
 
