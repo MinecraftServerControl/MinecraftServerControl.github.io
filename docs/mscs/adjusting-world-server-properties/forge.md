@@ -8,18 +8,19 @@ permalink: /docs/mscs/adjusting-world-server-properties/forge
 
 # Forge
 
-[Forge][forge] has an easy to use installer that can be used to install all of the needed files to run a Forge server,
-starting with version `1.6.2-9.10.0.818`. To install a version compatible with Minecraft 1.8.9, [download][download] the
-Forge installer `forge-x.x-xx.xx.x.xxxx-installer` and run the following as the `minecraft` user (`sudo su minecraft`):
+[Forge][forge] has an easy to use installer that can be used to install all of the needed files to run a Forge server.
+To install a version compatible with Minecraft 1.16.4, [download][download] the Forge installer `forge-forge-x.x.x-x.x.x-installer`
+and run the following as the `minecraft` user (`sudo su minecraft`):
 
 ```bash
-cd /opt/mscs/server
-wget http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.8.9-11.15.1.1722/forge-1.8.9-11.15.1.1722-installer.jar
-java -jar forge-1.8.9-11.15.1.1722-installer.jar --installServer
+mkdir -p /opt/mscs/server/forge-1.16.4-35.1.7
+cd /opt/mscs/server/forge-1.16.4-35.1.7
+wget https://files.minecraftforge.net/maven/net/minecraftforge/forge/1.16.4-35.1.7/forge-1.16.4-35.1.7-installer.jar
+java -jar forge-1.16.4-35.1.7-installer.jar --installServer
 ```
 
-The installer should install the forge server jar to `/opt/mscs/server/forge-1.8-11.14.2.1434-universal.jar` and a bunch
-of library files in `/opt/mscs/server/libraries/`.
+The installer should install the forge server jar to `/opt/mscs/server/forge-1.16.4-35.1.7/forge-1.16.4-35.1.7.jar`
+and a bunch of library files in `/opt/mscs/server/forge-1.16.4-35.1.7/libraries/`.
 
 Create a new server (if necessary):
 
@@ -40,17 +41,27 @@ cd /opt/mscs/worlds/forge
 
 Modify the `mscs.properties` file and add/alter these lines, replacing versions and file paths as needed:
 
+```bash
+editor /opt/mscs/worlds/forge/mscs.properties
+```
+
+Add this
+
 ```ini
-mscs-client-version=1.8.4
-mscs-server-version=1.8.4
-mscs-server-jar=forge-1.8.9-11.15.1.1722-universal.jar
+mscs-client-version=1.16.4
+mscs-server-version=1.16.4
+mscs-server-jar=forge-1.16.4-35.1.7/forge-1.16.4-35.1.7.jar
 mscs-server-url=
 ```
 
-Start the server:
+You may also want to increase the initial RAM and possibly even the maximum RAM.
 
-```bash
-mscs start forge
+> Minimum default is 128M  
+> Maximum default is 2048M
+
+```ini
+mscs-initial-memory=1024M
+mscs-maximum-memory=3048M
 ```
 
 If the server fails to start, the `eula.txt` file may need to be edited and accepted:
@@ -59,18 +70,31 @@ If the server fails to start, the `eula.txt` file may need to be edited and acce
 editor /opt/mscs/worlds/forge/eula.txt
 ```
 
+Change `false` to `true`
+
+```ini
+eula=true
+```
+
+Stop then Start the server:
+
+```bash
+mscs stop forge
+mscs start forge
+```
+
 The server should start up and run
 
 The server startup can be monitored by running:
 
 ```bash
-mscs console forge
+mscs watch forge
 ```
 
-Once you are done watching the server boot up, you can press `<Ctrl-D>` to detach.
+Once you are done watching the server boot up, you can press `<Ctrl-C>` to detach.
 
 Simply add mods as you would normally by dragging them into the `/opt/mscs/worlds/forge/mods` folder, assuming `forge`
 is the name of your world.
 
-[forge]: http://www.minecraftforge.net/
-[download]: http://files.minecraftforge.net/
+[forge]: http://www.minecraftforge.net
+[download]: http://files.minecraftforge.net
