@@ -14,7 +14,7 @@ Follow the instructions below to set [PaperMC][papermc] up for a world that alre
 Make sure the world is not running. Then, set the server download URL in the world's `mscs.properties`:
 
 ```ini
-mscs-server-url=https://papermc.io/ci/job/Paper-$SERVER_VERSION/lastSuccessfulBuild/artifact/paperclip.jar
+mscs-server-url=https://papermc.io/api/v1/paper/$SERVER_VERSION/latest/download
 ```
 
 Set the JAR to use in the world's `mscs.properties`:
