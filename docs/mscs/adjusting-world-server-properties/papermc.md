@@ -34,4 +34,6 @@ That's it! When you start the world, it should now be running PaperMC.
 
 The PaperMC directories will be created in the world folder.
 
+Note: You will need to change these same values whenever you want to upgrade to the latest version. PaperMC is unfortunately no longer providing a stable link to the latest version of their software, so you will need to modify these values by hand.
+
 [papermc]: https://papermc.io/
