@@ -23,22 +23,22 @@ most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
 <details>
-  <summary>Dependencies</summary>
+  <summary>Dependencies (Click Me)</summary>
   
-- Java JRE - The Minecraft server software requires this. **As of Minecraft 1.12, Java 8 is required.**
-- Perl - Most, if not all, Unix and Linux like systems have this preinstalled.
-- libjson-perl - Allows the script to read JSON formatted data.
-- libwww-perl - Allows the script to download data to verify downloads.
-- liblwp-protocol-https-perl - Allows the script to download data over HTTPS.
-- util-linux - Allows the script to use the `flock` script which ships with it for crash detection. Standard package with linux.
-- Python - Required by the Minecraft Overviewer mapping software.
-- GNU Make - Allows you to use the Makefile to simplify installation.
-- GNU Wget - Allows the script to download software updates via the internet.
-- rdiff-backup - Allows the script to efficiently run backups.
-- rsync - Allows the script to efficiently make copies of files.
-- Socat - Allows the script to communicate with the Minecraft server.
-- Iptables - Although not explicitly required, a good firewall should be installed.
-- Sudo - Run processes under other user and groups  
+- Java JRE - The Minecraft server software requires this. **As of Minecraft 1.12, Java 8 is required.**<br>
+- Perl - Most, if not all, Unix and Linux like systems have this preinstalled.<br>
+- libjson-perl - Allows the script to read JSON formatted data.<br>
+- libwww-perl - Allows the script to download data to verify downloads.<br>
+- liblwp-protocol-https-perl - Allows the script to download data over HTTPS.<br>
+- util-linux - Allows the script to use the `flock` script which ships with it for crash detection. Standard package with linux.<br>
+- Python - Required by the Minecraft Overviewer mapping software.<br>
+- GNU Make - Allows you to use the Makefile to simplify installation.<br>
+- GNU Wget - Allows the script to download software updates via the internet.<br>
+- rdiff-backup - Allows the script to efficiently run backups.<br>
+- rsync - Allows the script to efficiently make copies of files.<br>
+- Socat - Allows the script to communicate with the Minecraft server.<br>
+- Iptables - Although not explicitly required, a good firewall should be installed.<br>
+- Sudo - Run processes under other user and groups  <br>
 
 </details>
 
