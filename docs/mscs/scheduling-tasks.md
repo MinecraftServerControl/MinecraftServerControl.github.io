@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Scheduling Tasks
-nav_order: 7
+nav_order: 8
 permalink: /docs/mscs/scheduling-tasks
 ---
 
