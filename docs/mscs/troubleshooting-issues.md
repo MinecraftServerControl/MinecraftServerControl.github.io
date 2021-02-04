@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Troubleshooting/Issues
-nav_order: 9
+nav_order: 10
 permalink: /docs/mscs/troubleshooting-issues
 ---
 
