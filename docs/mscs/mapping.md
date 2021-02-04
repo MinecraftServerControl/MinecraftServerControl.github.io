@@ -20,12 +20,11 @@ permalink: /docs/mscs/mapping
 
 Overviewer is the mapping software that MSCS uses. It has pretty straightforward documentation for installation:
 
-- [Debian / Ubuntu][install_debian]
+- [Debian / Ubuntu][building]
 - [CentOS / RHEL / Fedora][install_rhel]
 
-For Debian / Ubuntu, we suggest either [downloading the premade binaries][download] or
-[building Overviewer from source][building] instead using their apt repository as it is broken on the newer versions of
-Debian / Ubuntu.
+> __NOTE:__ For Debian / Ubuntu, we suggest [building Overviewer from source][building] instead using their apt
+> repository as it is broken on the newer versions of Debian / Ubuntu (eg 20.04).
 
 __Once you follow the install page, come back here for further instructions. Don't read the "Running the Overviewer"
 section, as it will differ in MSCS.__
@@ -37,7 +36,7 @@ various Overviewer mapping settings which you change to your liking.
 
 We've listed the map-related settings below:
 
-- `mscs-overviewer-bin`: This is the location for the Overviewer binary.
+- `mscs-overviewer-bin`: This is the location for the Overviewer binary file (`overviewer.py`).
   If you manually installed Overviewer to another location, you can enter the location here.
 - `mscs-overviewer-url`: A clickable link for users in chat to view the overviewer website.
 - `mscs-maps-location`: The location to store the generated maps. Change this value

@@ -50,7 +50,7 @@ ls
 
 Result:
 
-```plain
+```
 alpha
 banned-ips.txt
 banned-players.txt
@@ -103,7 +103,7 @@ mscs ls
 
 Result:
 
-```plain
+```
   alex: 25567
   test: 25565
   creative: 25562 (disabled)
@@ -118,7 +118,7 @@ mscs list
 
 Result:
 
-```plain
+```
   alex:
     motd=A Minecraft Server    server-ip=    server-port=25567    max-players=20    level-type=default    online-mode=true
 
@@ -135,7 +135,7 @@ mscs status
 
 Result:
 
-```plain
+```
 Minecraft Server Status:
   alex: not running.
   test: running version 1.16.4 (1 of 20 users online).

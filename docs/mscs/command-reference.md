@@ -20,7 +20,7 @@ The `[<options>]` argument is optional and is not typically used. We list option
 
 ## Actions
 
-```plain
+```
 start <world1> <world2> <...>
   Start the Minecraft world server(s).  Start all world servers by default.
 
@@ -125,7 +125,7 @@ query <world1> <world2> <...>
 
 ## Options
 
-```plain
+```
 -c <config_file>
   Read configuration from <config_files> instead of default locations.
 
