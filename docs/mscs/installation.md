@@ -27,6 +27,7 @@ requirements that this script has that may not already be in place:
 - libjson-perl - Allows the script to read JSON formatted data.
 - libwww-perl - Allows the script to download data to verify downloads.
 - liblwp-protocol-https-perl - Allows the script to download data over HTTPS.
+- util-linux - Allows the script to use the `flock` script which ships with it for crash detection. Standard package with linux.
 - Python - Required by the Minecraft Overviewer mapping software.
 - GNU Make - Allows you to use the Makefile to simplify installation.
 - GNU Wget - Allows the script to download software updates via the internet.
@@ -40,20 +41,20 @@ If you are running Debian, you can make sure that these are
 installed by running:
 
 ```bash
-apt install sudo default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget git rdiff-backup rsync socat iptables
+apt install sudo default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
 ```
 
 If you are running Ubuntu, you can make sure that these are
 installed by running:
 
 ```bash
-sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl python make wget git rdiff-backup rsync socat iptables
+sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
 ```
 
 If you are running Fedora, you can make sure that these are installed by running:
 
 ```bash
-yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https python make wget git rdiff-backup rsync socat iptables sudo procps which
+yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
 
 ### Configuring the Firewall / NAT
