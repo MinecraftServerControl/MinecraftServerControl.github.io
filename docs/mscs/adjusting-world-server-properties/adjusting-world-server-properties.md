@@ -142,6 +142,9 @@ mscs-default-server-location=/opt/mscs/server
 ; for the world server selected.
 mscs-default-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY $JVM_ARGS -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
 
+; Default behavior if to restart the server after crash is detected (default disabled).
+# mscs-default-restart-after-crash=false
+
 ; Location to store backup files.
 mscs-backup-location=/opt/mscs/backups
 
@@ -270,6 +273,9 @@ mscs-server-location=/opt/mscs/server
 ; selected. The $SERVER_ARGS variable provides access to the server arguments
 ; for the world server selected.
 mscs-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY $JVM_ARGS -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
+
+; Restart the server after a crash (default disabled).
+mscs-restart-after-crash=false
 ```
 
 The following variables may be used in some of the values of the above keys:
