@@ -22,6 +22,9 @@ We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
 
+<details>
+  <summary>Dependencies</summary>
+  
 - Java JRE - The Minecraft server software requires this. **As of Minecraft 1.12, Java 8 is required.**
 - Perl - Most, if not all, Unix and Linux like systems have this preinstalled.
 - libjson-perl - Allows the script to read JSON formatted data.
@@ -35,7 +38,9 @@ requirements that this script has that may not already be in place:
 - rsync - Allows the script to efficiently make copies of files.
 - Socat - Allows the script to communicate with the Minecraft server.
 - Iptables - Although not explicitly required, a good firewall should be installed.
-- Sudo - Run processes under other user and groups
+- Sudo - Run processes under other user and groups  
+
+</details>
 
 If you are running Debian, you can make sure that these are
 installed by running:
