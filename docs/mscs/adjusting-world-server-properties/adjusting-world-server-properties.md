@@ -29,7 +29,7 @@ Additionally, we list examples of [common configuration settings](adjusting-worl
 at the end of this page.
 
 Examples of how to configure the properties for major server mods can be found on the sidebar--specifically for
-[PaperMC][papermc], [SpigotMC][spigotmc], [Forge][forge], [BungeeCord][bungeecord], and [Technic/Tekkit Pack][technic].
+[PaperMC][papermc], [Purpur][purpur], [SpigotMC][spigotmc], [Forge][forge], [BungeeCord][bungeecord], and [Technic/Tekkit Pack][technic].
 
 ---
 
@@ -353,6 +353,7 @@ Yes, this command could be used... but we do not guarantee that it will work or 
 faster/better/harder/stronger.
 
 [papermc]: papermc
+[purpur]: purpur
 [spigotmc]: spigotmc
 [forge]: forge
 [bungeecord]: bungeecord
