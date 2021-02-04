@@ -1,0 +1,51 @@
+---
+layout: default
+title: Backups
+nav_order: 7
+permalink: /docs/mscs/crash-detection
+---
+
+# Automatic Crash Detection & Restarts
+{: .no_toc }
+
+## Table of Contents
+{: .no_toc .text-delta }
+
+1. TOC
+{:toc}
+
+---
+
+## Using Backup
+
+MSCS has the ability to automatically restart after a crash is detected. This feature can be set on a global basis or on a per-world basis. 
+
+---
+
+## Scheduling Backups
+
+To schedule backups so they run periodically, please see [scheduling tasks](scheduling-tasks).
+
+---
+
+## Viewing & Restoring Backups
+
+You can view the backups created by running the `mscs list-backups` command, and restore a backup using the
+`mscs restore-backup` command.
+
+You can specify how long to keep backups by changing the `mscs-backup-duration` property in `mscs.defaults` or the
+world's `mscs.properties` config file (see [Adjusting World & Server Properties](adjusting-world-server-properties)).
+
+### Restoring Backup Example
+
+To list the date and time of all available backups for a world named `alpha`:
+
+```bash
+mscs list-backups alpha
+```
+
+To restore a specific backup for `alpha`:
+
+```bash
+mscs restore-backup alpha 2015-03-25T21:15:11-06:00
+```
