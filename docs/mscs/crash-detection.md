@@ -32,13 +32,13 @@ To enable automatic crash detection & restarts on a global basis, set the `mscs-
 
 To set it on a per-world basis, set the `mscs-restart-after-crash` flag to `true` in your world's `mscs.properties` file (see [Adjusting World & Server Properties](https://minecraftservercontrol.github.io/docs/mscs/adjusting-world-server-properties) if you're confused where to find this file).
 
---
+---
 
 ## Notes
 
-Please note that this feature treats in-game stop commands as crashes (so if you were to run /stop in your world with this feature enabled, it will restart).
+Please note that this feature treats in-game stop commands as crashes (so if you were to run `/stop` in your world with this feature enabled, it will restart).
 
-If a world crashes and it restarts, it will notify you the next time you ran a `mscs status` command, with notes on what logs to look at to find more information. For instance:
+Additionally, if a world crashes and it restarts, it will notify you that it crashed the next time you ran a `mscs status` command, with notes on what logs to look at to find more information. For instance:
 
 ```
 $ mscs status
