@@ -61,9 +61,10 @@ server.properties
 white-list.txt
 ```
 
-Now I simply tell mscs to create a new world from the current directory:
+Now I simply give the minecraft user ownership and tell mscs to import the world from the current directory:
 
 ```bash
+sudo chown -R minecraft:minecraft .
 mscs import . alpha 25565
 ```
 
@@ -71,6 +72,7 @@ Alternatively, I could have provided the directory the `alpha` world resides in 
 my Documents folder in the example below) instead of changing directories:
 
 ```bash
+sudo chown -R minecraft:minecraft Documents/minecraft_world
 mscs import Documents/minecraft_world alpha 25565
 ```
 
