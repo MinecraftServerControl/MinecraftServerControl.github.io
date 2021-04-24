@@ -42,14 +42,7 @@ requirements that this script has that may not already be in place:
 
 </details>
 
-If you are running Debian, you can make sure that these are
-installed by running:
-
-```bash
-apt install sudo default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
-```
-
-If you are running Ubuntu, you can make sure that these are
+If you are running Debian or Ubuntu, you can make sure that these are
 installed by running:
 
 ```bash
@@ -59,7 +52,7 @@ sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-h
 If you are running Fedora, you can make sure that these are installed by running:
 
 ```bash
-yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python make wget git rdiff-backup rsync socat iptables sudo procps which
+sudo yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
 
 ### Configuring the Firewall / NAT
