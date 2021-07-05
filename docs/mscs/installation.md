@@ -42,7 +42,7 @@ If you are running Debian or Ubuntu, you can make sure that the dependencies are
 sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
 ```
 
-**Note**: the version of Java that is shipped in the `default-jre` package, which is the official Debian / Ubuntu Java package, varies based on which version of Debian or Ubuntu you have installed on your system. In most cases (as of July 2021), the version of Java that is shipped with the `default-jre` package is less than Java 16, which is required for Minecraft 1.17+. You can test to see if the version of Debian or Ubuntu you have has an official Java 17 package repo by trying: `sudo apt-get install openjdk-17-jre`. If this fails, you will either have to download Java 16 manually or add it from an unofficial, third party package repository.
+**Note**: the version of Java that is shipped in the `default-jre` package, which is the official Debian / Ubuntu Java package, varies based on which version of Debian or Ubuntu you have installed on your system. In most cases (as of July 2021), the version of Java that is shipped with the `default-jre` package is less than Java 16, which is required for Minecraft 1.17+. You can test to see if the version of Debian or Ubuntu you have has an official Java 17 package repo by trying: `sudo apt-get install openjdk-17-jre`. If this fails, and you want to play Minecraft versions 1.17+, you will either have to download Java 16 manually or add it from an unofficial, third party package repository.
 
 ### Fedora, Redhat, or CentOS
 If you are running Fedora, Redhat, or CentOS, you can make sure that the dependencies are installed by running the following command:
