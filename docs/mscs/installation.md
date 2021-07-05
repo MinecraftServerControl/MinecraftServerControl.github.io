@@ -21,11 +21,8 @@ permalink: /docs/mscs/installation
 We've made an attempt to utilize only features that are normally installed in
 most Linux and UNIX environments in this script. However, there may be a few
 requirements that this script has that may not already be in place:
-
-<details>
-  <summary>Dependencies (Click Me)</summary>
   
-- Java JRE - The Minecraft server software requires this. **As of Minecraft 1.12, Java 8 is required.**<br>
+- Java JRE - The Minecraft server software requires this. **Minecraft versions 1.12-1.16 require Java 8 as the minimum Java version. Minecraft versions 1.17+ require Java 16 as the minimum Java version.**<br>
 - Perl - Most, if not all, Unix and Linux like systems have this preinstalled.<br>
 - libjson-perl - Allows the script to read JSON formatted data.<br>
 - libwww-perl - Allows the script to download data to verify downloads.<br>
@@ -40,16 +37,19 @@ requirements that this script has that may not already be in place:
 - Iptables - Although not explicitly required, a good firewall should be installed.<br>
 - Sudo - Run processes under other user and groups  <br>
 
-</details>
 
 If you are running Debian or Ubuntu, you can make sure that these are
-installed by running:
+installed by running the following command:
+
+**Note: the version of Java that is shipped in the `default-jre` package, which is the official Debian / Ubuntu Java package, varies based on which version of Debian or Ubuntu you have installed on your system. In most cases (as of July 2021), the version of Java that is shipped with the `default-jre` package is less than Java 16, which is required for Minecraft 1.17+. You can test to see if the version of Debian or Ubuntu you have has an official Java 17 package repo by trying: `sudo apt-get install openjdk-17-jre`. If this fails, you will either have to download Java 16 manually or add it from an unofficial, third party package repository.** 
 
 ```bash
 sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
 ```
 
-If you are running Fedora, you can make sure that these are installed by running:
+If you are running Fedora, Redhat, or CentOS, you can make sure that these are installed by running the following command:
+
+**Note: the `java-1.8.0-openjdk` package is the official Fedora / Redhat / Centos package that provides Java 8, which is only supported for Minecraft versions up to Minecraft 1.16. As of July 2021, there is no official Java 16 package (to the best of our knowledge). Thus, if you want to run Minecraft 1.17+, you will either have to download Java 16 manually or add it from an unofficial, third party package repository. 
 
 ```bash
 sudo yum install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python make wget git rdiff-backup rsync socat iptables sudo procps which
