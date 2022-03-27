@@ -110,7 +110,18 @@ sed -i "s|\"\$@|--nogui &|g" run.sh
 sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt
 ```
 
-Continue below at **<a href="#end-manual">You may also want...</a>**
+<details>
+<summary>Explanation of the sed commands</summary>
+
+`sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh`: This matches all occurences of `@` that aren't followed by `"` and adds the current directory followed by a / to it (or rather, replaces the `@` with an `@` followed by the current directory).
+
+`sed -i "s|\"\$@|--nogui &|g" run.sh`: This adds `--nogui ` in front of `"$@`, with `&` being the matched pattern.
+
+`sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt`: This adds the current path to all occurences of the word libraries in the unix_args.txt file. Because the directory contains the forge version (for example `1.17.1-37.1.1`), `*` is used as a wildcard.
+
+</details>
+<br>
+Continue below at <a href="#end-manual"><strong>You may also want...</strong></a>
 
 ### Manual
 
