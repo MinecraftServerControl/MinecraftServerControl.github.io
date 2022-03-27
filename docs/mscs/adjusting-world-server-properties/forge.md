@@ -100,9 +100,11 @@ is the name of your world.
 ## Forge 1.17.1 and later
 Please note that forge for Minecraft 1.17.1 will be used in the examples. If you named the server directory `forge-1.17.1` in the first step with the `mkdir` command, the installer should install a bash script to `/opt/mscs/server/forge-1.17.1` and a bunch of library files in `/opt/mscs/server/forge-1.17.1/libraries/`.
 
+There's an automatic and a manual way to apply the fixes needed for these versions. 
+
 ### Automatic
 
-In the `/opt/mscs/server/forge-1.17.1` directory, execute these commands: 
+**In the `/opt/mscs/server/forge-1.17.1` directory**, execute these commands: 
 
 ```bash
 sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh
