@@ -100,7 +100,34 @@ is the name of your world.
 ## Forge 1.17.1 and later
 Please note that forge for Minecraft 1.17.1 will be used in the examples. If you named the server directory `forge-1.17.1` in the first step with the `mkdir` command, the installer should install a bash script to `/opt/mscs/server/forge-1.17.1` and a bunch of library files in `/opt/mscs/server/forge-1.17.1/libraries/`.
 
-In the `/opt/mscs/server/forge-1.17.1 directory`, edit `run.sh`. 
+There's an automatic and a manual way to apply the fixes needed for these versions. 
+
+### Automatic
+
+**In the `/opt/mscs/server/forge-1.17.1` directory**, execute these commands: 
+
+```bash
+sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh
+sed -i "s|\"\$@|--nogui &|g" run.sh
+sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt
+```
+
+<details>
+<summary>Explanation of the sed commands</summary>
+
+`sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh`: This matches all occurences of `@` that aren't followed by `"` and adds the current directory followed by a / to it (or rather, replaces the `@` with an `@` followed by the current directory).
+
+`sed -i "s|\"\$@|--nogui &|g" run.sh`: This adds `--nogui ` in front of `"$@`, with `&` being the matched pattern.
+
+`sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt`: This adds the current path to all occurences of the word libraries in the unix_args.txt file. Because the directory contains the forge version (for example `1.17.1-37.1.1`), `*` is used as a wildcard.
+
+</details>
+<br>
+Continue below at <a href="#end-manual"><strong>You may also want...</strong></a>
+
+### Manual
+
+In the `/opt/mscs/server/forge-1.17.1` directory, edit `run.sh`. 
 
 (GNU nano is an easy to use command-line text editor if you plan to edit the file from the terminal. Install it with `sudo apt install nano` if you are using a Debian based distro. In the following instructions, to edit a file with GNU nano, replace `editor` with `nano`.)
 
@@ -122,6 +149,25 @@ The `@user_jvm_args.txt` and the `@libraries/net/minecraftforge/forge/1.17.1-37.
 java @/opt/mscs/server/forge-1.17.1/user_jvm_args.txt @/opt/mscs/server/forge-1.17.1/libraries/net/minecraftforge/forge/1.17.1-37.1.1/unix_args.txt --nogui "$@"
 ```
 
+Now the `unix_args.txt` file mentioned in `run.sh` needs to be edited as well to include the full directory paths. Change the directory to the one containing the `unix_args.txt` file, create a backup in case you mess up the editing, and then edit the original.
+
+```bash
+cd /opt/mscs/server/forge-1.17.1/libraries/net/minecraftforge/forge/1.17.1-37.1.1/
+cp unix_args.txt unix_args_backup.txt
+editor unix_args.txt
+```
+
+Every path that includes `libraries/[...]` has to be replaced with their full directory path: `/opt/mscs/server/forge-1.17.1/libraries/[...]`. If your editor of choice is GNU nano, this can be done by pressing `<Ctrl-\>`, typing `libraries` and pressing enter, then typing the full path name. In this case it would be `/opt/mscs/server/forge-1.17.1/libraries`, then press enter, then press `<a>` to replace all. 
+
+If you mess this up, you can always delete the `unix_args.txt` file and make another one using the backup, and start editing again.
+
+```bash
+rm unix_args.txt
+cp unix_args_backup.txt unix_args.txt
+editor unix_args.txt
+```
+<a id="end-manual"></a>
+
 You may also want to increase the initial RAM and possibly even the maximum RAM. To do this, edit the `user_jvm_args.txt` file.
 
 ```bash
@@ -141,24 +187,6 @@ Now add all the java arguments you wish. For example, to allocate a minimum of 4
 # A good default for a modded server is 4GB.
 # Uncomment the next line to set it.
 -Xms4G -Xmx6G
-```
-
-Now the `unix_args.txt` file mentioned in `run.sh` needs to be edited as well to include the full directory paths. Change the directory to the one containing the `unix_args.txt` file, create a backup in case you mess up the editing, and then edit the original.
-
-```bash
-cd /opt/mscs/server/forge-1.17.1/libraries/net/minecraftforge/forge/1.17.1-37.1.1/
-cp unix_args.txt unix_args_backup.txt
-editor unix_args.txt
-```
-
-Every path that includes `libraries/[...]` has to be replaced with their full directory path: `/opt/mscs/server/forge-1.17.1/libraries/[...]`. If your editor of choice is GNU nano, this can be done by pressing `<Ctrl-\>`, typing `libraries` and pressing enter, then typing the full path name. In this case it would be `/opt/mscs/server/forge-1.17.1/libraries`, then press enter, then press `<a>` to replace all. 
-
-If you mess this up, you can always delete the `unix_args.txt` file and make another one using the backup, and start editing again.
-
-```bash
-rm unix_args.txt
-cp unix_args_backup.txt unix_args.txt
-editor unix_args.txt
 ```
 
 Create a new server (if necessary):
@@ -208,7 +236,7 @@ mscs stop forge
 mscs start forge
 ```
 
-The server should start up and run
+The server should start up and run.
 
 The server startup can be monitored by running:
 
