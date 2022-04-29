@@ -112,7 +112,7 @@ sed -i "s|\"\$@|--nogui &|g" run.sh
 sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt
 ```
 
-<details>
+<details markdown='span'>
 <summary>Explanation of the sed commands</summary>
 
 `sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh`: This matches all occurences of `@` that aren't followed by `"` and adds the current directory followed by a / to it (or rather, replaces the `@` with an `@` followed by the current directory).
