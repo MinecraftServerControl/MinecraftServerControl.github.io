@@ -14,7 +14,7 @@ Follow the instructions below to set [Purpur][purpur] up for a world that alread
 Make sure the world is not running. Then, set the server download URL in the world's `mscs.properties`:
 
 ```ini
-mscs-server-url=https://purpur.pl3x.net/api/v1/purpur/$SERVER_VERSION/latest/download
+mscs-server-url=https://api.purpurmc.org/v2/purpur/$SERVER_VERSIONlatest/download
 ```
 
 Set the JAR to use in the world's `mscs.properties`:
@@ -34,4 +34,4 @@ That's it! When you start the world, it should now be running Purpur.
 
 The Purpur directories will be created in the world folder.
 
-[purpur]: https://purpur.pl3x.net/
+[purpur]: https://purpurmc.org/
