@@ -109,6 +109,7 @@ There's an automatic and a manual way to apply the fixes needed for these versio
 ```bash
 sed -i "\|@[^\"]|s|@|@$(pwd)/|" run.sh
 sed -i "s|\"\$@|--nogui &|g" run.sh
+sed -i "s|libraries|$(pwd)/libraries|g" run.sh
 sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt
 ```
 
@@ -120,7 +121,9 @@ sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/uni
 
 <span markdown='span'>`sed -i "s|\"\$@|--nogui &|g" run.sh`: This adds `--nogui ` in front of `"$@`, with `&` being the matched pattern.</span><br>
 
-<span markdown='span'>`sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt`: This adds the current path to all occurences of the word libraries in the unix_args.txt file. Because the directory contains the forge version (for example `1.17.1-37.1.1`), `*` is used as a wildcard.</span>
+<span markdown='span'>`sed -i "s|libraries|$(pwd)/libraries|g" run.sh`: This replaces `@libraries/net/minecraftforge/forge/1.17.1-37.1.1/unix_args.txt` with its full directory path in the `bash.sh` file.</span><br>
+
+<span markdown='span'>`sed -i "s|libraries|$(pwd)/libraries|g" libraries/net/minecraftforge/forge/*/unix_args.txt`: This adds the current path to all occurences of the word libraries in the `unix_args.txt` file. Because the directory contains the forge version (for example `1.17.1-37.1.1`), `*` is used as a wildcard.</span>
 
 </details>
 <br>
