@@ -48,9 +48,10 @@ sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-h
 If you are running Fedora, Redhat, or CentOS, you can make sure that the dependencies are installed by running the following command:
 
 ```bash
-sudo dnf install java-1.8.0-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python3 make wget git rdiff-backup rsync socat iptables sudo procps which
+sudo dnf install java-17-openjdk perl perl-JSON perl-libwww-perl perl-LWP-Protocol-https util-linux python3 make wget git rdiff-backup rsync socat iptables sudo procps which
 ```
-**Note:** the `java-1.8.0-openjdk` package is the official Fedora / Redhat / Centos package that provides Java 8, which is only supported for Minecraft versions up to Minecraft 1.16. As of July 2021, there is no official Fedora / Redhat / CentOS Java 16 package. Thus, if you want to run Minecraft 1.17+, you will either have to download Java 16 manually or add it from an unofficial, third party package repository.
+**Note:** Minecraft 1.18+ requires Java 17 or higher.
+
 **Additional Note:** if you are running Redhat Enterprise Linux, you must install and enable the EPEL repository in order to install some of the required packages. You can do so with the following commands (assuming you are running RHEL 8):
 ```bash
 sudo subscription-manager repos --enable codeready-builder-for-rhel-8-$(arch)-rpms
