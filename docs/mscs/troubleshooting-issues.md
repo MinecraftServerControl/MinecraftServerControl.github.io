@@ -7,6 +7,7 @@ permalink: /docs/mscs/troubleshooting-issues
 
 # Troubleshooting
 
+## Permission denied error
 If you get a `permission denied` error when attempting to run a `mscs` command, please ensure that the `minecraft` user
 has the correct permissions set:
 
@@ -14,6 +15,9 @@ has the correct permissions set:
 chmod -R u+w /opt/mscs
 chown -R minecraft:minecraft /opt/mscs
 ```
+
+## Error starting the server: couldn't retrieve the server's process ID
+This is usually due to an outdated java installation on your machine when trying to start the minecraft server. Verify that the java version required for your minecraft server version is installed on your machine.
 
 ---
 
