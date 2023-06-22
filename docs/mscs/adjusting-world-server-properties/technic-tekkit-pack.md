@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Technic/Tekkit Pack
-nav_order: 6
+nav_order: 8
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/technic-tekkit-pack
 ---

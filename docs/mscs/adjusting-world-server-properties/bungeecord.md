@@ -1,7 +1,7 @@
 ---
 layout: default
 title: BungeeCord
-nav_order: 5
+nav_order: 1
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/bungeecord
 ---

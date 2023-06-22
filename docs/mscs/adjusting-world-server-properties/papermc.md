@@ -1,7 +1,7 @@
 ---
 layout: default
 title: PaperMC 
-nav_order: 1
+nav_order: 4
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/papermc
 ---

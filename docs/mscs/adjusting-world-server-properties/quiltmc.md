@@ -1,7 +1,7 @@
 ---
 layout: default
 title: QuiltMC
-nav_order: 3
+nav_order: 6
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/quiltmc
 ---

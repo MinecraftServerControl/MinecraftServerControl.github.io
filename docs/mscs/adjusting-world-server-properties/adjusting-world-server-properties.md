@@ -28,8 +28,7 @@ What follows are the global server properties and individual world properties MS
 Additionally, we list examples of [common configuration settings](adjusting-world-server-properties#common-configuration-settings)
 at the end of this page.
 
-Examples of how to configure the properties for major server mods can be found on the sidebar--specifically for
-[PaperMC][papermc], [Purpur][purpur], [SpigotMC][spigotmc], [Forge][forge], [BungeeCord][bungeecord], and [Technic/Tekkit Pack][technic].
+Examples of how to configure the properties for documented server mods can be found on the sidebar.
 
 ---
 
@@ -349,12 +348,4 @@ Do you want a crazy Java command? You can do it with `mscs-server-command`:
 mscs-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY -Xincgc -XX:NewRatio=3 -XX:+UseThreadPriorities -XX:CMSFullGCsBeforeCompaction=1 -XX:SoftRefLRUPolicyMSPerMB=2048 -XX:+CMSParallelRemarkEnabled -XX:+UseParNewGC -XX:+UseAdaptiveSizePolicy -XX:+DisableExplicitGC -Xnoclassgc -oss4M -ss4M -XX:+UseFastAccessorMethods -XX:CMSInitiatingOccupancyFraction=90 -XX:+UseConcMarkSweepGC -XX:UseSSE=4 -XX:+UseCMSCompactAtFullCollection -XX:ParallelGCThreads=8 -XX:+AggressiveOpts -Djava.awt.headless=true -jar $SERVER_LOCATION/$SERVER_JAR $SERVER_ARGS
 ```
 
-Yes, this command could be used... but we do not guarantee that it will work or that it will make a server any
-faster/better/harder/stronger.
-
-[papermc]: papermc
-[purpur]: purpur
-[spigotmc]: spigotmc
-[forge]: forge
-[bungeecord]: bungeecord
-[technic]: technic-tekkit-pack
+Yes, this command could be used... but we do not guarantee that it will work or that it will make a server any faster/better/harder/stronger.

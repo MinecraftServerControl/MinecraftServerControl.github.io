@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Purpur
-nav_order: 6
+nav_order: 5
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/purpur
 ---

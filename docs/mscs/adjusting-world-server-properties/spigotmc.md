@@ -1,7 +1,7 @@
 ---
 layout: default
 title: SpigotMC
-nav_order: 2
+nav_order: 7
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/spigotmc
 ---

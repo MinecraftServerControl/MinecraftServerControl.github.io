@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fabric
-nav_order: 7
+nav_order: 2
 parent: Adjusting World & Server Properties
 permalink: /docs/mscs/adjusting-world-server-properties/fabric
 ---
