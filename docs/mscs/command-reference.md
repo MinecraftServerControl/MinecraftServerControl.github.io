@@ -99,6 +99,10 @@ logrotate <world1> <world2> <...>
 backup <world1> <world2> <...>
   Backup the Minecraft world(s).  Backup all worlds by default.
 
+clean-backups <world>
+  Remove expired backups for the world.  Removes old backups based on
+  mscs-backup-duration.
+
 list-backups <world>
   List the datetime of the backups for the world.
 

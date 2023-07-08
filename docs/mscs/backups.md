@@ -30,13 +30,15 @@ By default, backups are saved in `/opt/mscs/backups`. The location backups are s
 `mscs-backup-location` in `mscs.defaults` or the world's `mscs.properties` config file
 (See [Adjusting World & Server Properties](adjusting-world-server-properties)).
 
----
-
 ## Scheduling Backups
 
 To schedule backups so they run periodically, please see [scheduling tasks](scheduling-tasks).
 
----
+## Cleaning Backups
+
+Backups are automatically cleaned whenever a backup runs.
+
+You can manually clean up the backups created by running the `mscs clean-backups` command.
 
 ## Viewing & Restoring Backups
 
