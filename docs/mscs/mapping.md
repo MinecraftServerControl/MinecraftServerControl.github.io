@@ -18,15 +18,11 @@ permalink: /docs/mscs/mapping
 
 ## Setting up mapping
 
-Overviewer is the mapping software that MSCS uses. It has pretty straightforward documentation for installation:
+__The Minecraft Overviewer Successor__ fork of the original and now unmaintained __Overviewer__ is the mapping software that MSCS uses. At the time of writing a confusing situation exists where the forked project is dependent on documentation published by the unmaintained project. Please be mindful of this when following links from the unmaintained __docs.overviewer.org__.
 
-- [Debian / Ubuntu][building]
-- [CentOS / RHEL / Fedora][install_rhel]
+Start with [building Overviewer from source][building] as the fork does not currently release binaries.
 
-> __NOTE:__ For Debian / Ubuntu, we suggest [building Overviewer from source][building] instead using their apt
-> repository as it is broken on the newer versions of Debian / Ubuntu (eg 20.04).
-
-__Once you follow the install page, come back here for further instructions. Don't read the "Running the Overviewer"
+__Once you have prepared a build, come back here for further instructions. Don't read the "Running the Overviewer"
 section, as it will differ in MSCS.__
 
 ### Configuring Overviewer
@@ -76,9 +72,7 @@ If running the `mscs map` command hangs and never completes, and you have multip
 `/opt/mscs/.minecraft/versions` folder, please try deleting all versions except the version that you need for your world
 and attempt mapping again. If you're still having issues, [please submit an issue on Github][mscs_issues].
 
-[install_debian]: http://docs.overviewer.org/en/latest/installing/#debian-ubuntu
-[install_rhel]: http://docs.overviewer.org/en/latest/installing/#centos-rhel-fedora
-[download]: http://overviewer.org/downloads
+[download]: https://github.com/GregoryAM-SP/The-Minecraft-Overviewer/releases
 [building]: http://docs.overviewer.org/en/latest/building/
 [config]: http://docs.overviewer.org/en/latest/config/
 [map_issue]: https://github.com/MinecraftServerControl/mscs/issues/238
