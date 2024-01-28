@@ -18,11 +18,11 @@ permalink: /docs/mscs/mapping
 
 ## Setting up mapping
 
-__The Minecraft Overviewer Successor__ fork of the original and now unmaintained __Overviewer__ is the mapping software that MSCS uses.
+__The Minecraft Overviewer Successor__ fork of the original and now unmaintained __Overviewer__ is the mapping software that MSCS uses. At the time of writing a confusing situation exists where the forked project is dependent on documentation published by the unmaintained project. Please be mindful of this when following links from the unmaintained __docs.overviewer.org__.
 
-> __NOTE:__ We suggest [building Overviewer from source][building] as the fork does not currently release binaries.
+Start with [building Overviewer from source][building] as the fork does not currently release binaries.
 
-__Once you have followed these instructions, come back here for further instructions. Don't read the "Running the Overviewer"
+__Once you have prepared a build, come back here for further instructions. Don't read the "Running the Overviewer"
 section, as it will differ in MSCS.__
 
 ### Configuring Overviewer
