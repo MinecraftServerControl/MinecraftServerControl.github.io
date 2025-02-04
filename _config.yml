@@ -9,7 +9,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Set to Just the Docs theme
-remote_theme: pmarsceill/just-the-docs
+remote_theme: just-the-docs/just-the-docs
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -46,6 +46,23 @@ footer_content: "MSCS is copyright &copy; 2011-2020 Jason M. Wood | <a href=\"ht
 
 # Color scheme currently only supports "dark" or nil (default)
 color_scheme: nil
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89

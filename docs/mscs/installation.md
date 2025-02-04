@@ -20,20 +20,24 @@ permalink: /docs/mscs/installation
 
 We've made an attempt to utilize only features that are normally installed in most Linux and UNIX environments in this script. However, there may be a few requirements that this script has that may not already be in place:
   
-- Java JRE - The Minecraft server software requires this. **As of Minecraft version 1.20.5, Java 21 is required as the minimum java version.**<br>
-- Perl - Most, if not all, Unix and Linux like systems have this preinstalled.<br>
-- libjson-perl - Allows the script to read JSON formatted data.<br>
-- libwww-perl - Allows the script to download data to verify downloads.<br>
-- liblwp-protocol-https-perl - Allows the script to download data over HTTPS.<br>
-- util-linux - Allows the script to use the `flock` script which ships with it for crash detection. Standard package with linux.<br>
-- Python - Required by the Minecraft Overviewer mapping software.<br>
-- GNU Make - Allows you to use the Makefile to simplify installation.<br>
-- GNU Wget - Allows the script to download software updates via the internet.<br>
-- rdiff-backup - Allows the script to efficiently run backups.<br>
-- rsync - Allows the script to efficiently make copies of files.<br>
-- Socat - Allows the script to communicate with the Minecraft server.<br>
-- Iptables - Although not explicitly required, a good firewall should be installed.<br>
-- Sudo - Run processes under other user and groups  <br>
+- Java JRE - The Minecraft server software requires this.
+
+{: .warning }
+> As of Minecraft version 1.20.5, Java 21 is required as the minimum java version.
+
+- Perl - Most, if not all, Unix and Linux like systems have this preinstalled.
+- libjson-perl - Allows the script to read JSON formatted data.
+- libwww-perl - Allows the script to download data to verify downloads.
+- liblwp-protocol-https-perl - Allows the script to download data over HTTPS.
+- util-linux - Allows the script to use the `flock` script which ships with it for crash detection. Standard package with linux.
+- Python - Required by the Minecraft Overviewer mapping software.
+- GNU Make - Allows you to use the Makefile to simplify installation.
+- GNU Wget - Allows the script to download software updates via the internet.
+- rdiff-backup - Allows the script to efficiently run backups.
+- rsync - Allows the script to efficiently make copies of files.
+- Socat - Allows the script to communicate with the Minecraft server.
+- Iptables - Although not explicitly required, a good firewall should be installed.
+- Sudo - Run processes under other user and groups
 
 ### Debian or Ubuntu
 If you are running Debian or Ubuntu, you can make sure that the dependencies are installed by running the following command:
@@ -42,7 +46,17 @@ If you are running Debian or Ubuntu, you can make sure that the dependencies are
 sudo apt-get install default-jre perl libjson-perl libwww-perl liblwp-protocol-https-perl util-linux python make wget git rdiff-backup rsync socat iptables
 ```
 
-**Note**: the version of Java that is shipped in the `default-jre` package, which is the official Debian / Ubuntu Java package, varies based on which version of Debian or Ubuntu you have installed on your system. In some cases (depending on what OS you're running), the version of Java that is shipped with the `default-jre` package is less than Java 21, which is required for Minecraft 1.20.5+. You can test to see if the version of Debian or Ubuntu you have has an official Java 21 package repo by trying: `sudo apt-get install openjdk-21-jre`. If this fails, and you want to play Minecraft versions 1.20.5+, you will either have to download Java 21 manually or add it from an unofficial, third party package repository. Java is backwards compatible, that means that you can use Java 21 for Minecraft 1.8 even if Mojang doesn't state that it is compatible with Java 21
+{: .note }
+> In Debian 12 and Ubuntu 22.04 (jammy), the package `default-jre` is using a version less than Java 21.
+> You can verify the version provided on your OS using either `sudo apt policy default-jre` (list which version `default-jre` is linked to)
+> or `sudo apt list openjdk-*-jre*` (list all JRE available in the configured repositories).
+>
+> If Java 21 is not available and you still want to play Minecraft versions 1.20.5+, you may install the latest version
+> from [OpenJDK](https://jdk.java.net/) or [Oracle](https://www.oracle.com/javadownload).
+
+{: .warning }
+> Depending on your OS the `python` package may not exist, in which case you will need to use both `python3` (to install the binaries)
+> and `python-is-python3` (to provide an alias of `python` to `python3`).
 
 ### Fedora, Redhat, or CentOS
 If you are running Fedora, Redhat, or CentOS, you can make sure that the dependencies are installed by running the following command:
