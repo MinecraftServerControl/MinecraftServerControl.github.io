@@ -23,7 +23,7 @@ Features include:
 - Run multiple Minecraft worlds.
 - Start, stop, and restart single or multiple worlds.
 - Create, delete, disable, and enable worlds.
-- Includes support for additional server types: Forge, BungeeCord, SpigotMC, etc.
+- Includes support for additional server types including PaperMC (with automatic updates), Forge, BungeeCord, SpigotMC, and more.
 - Users automatically notified of important server events.
 - LSB and systemd compatible init script, allows for seamless integration with your server's startup and shutdown
   sequences.

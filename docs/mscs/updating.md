@@ -47,11 +47,14 @@ latest Minecraft version. Note that you can specify if you want to update to the
 latest Minecraft snapshot by specifying `mscs-version-type` as `release` (default) or `snapshot` in the world's
 `mscs.properties`.
 
-### Modded Server
+### PaperMC
 
-If you are running a modded Minecraft server (i.e. one where you specified `mscs-server-jar` to something like SpigotMC
-or Forge), the `mscs update` command will not work. This is because the `mscs update` command functions by looking at
-the `version_manifest.json` file located in `/opt/mscs/version_manifest.json` that is downloaded from Mojang.
+If you are running a PaperMC world with `mscs-server-type=papermc`, you can use `mscs update <world>` just like a
+vanilla server. MSCS will automatically fetch and download the latest build from the PaperMC API. See the
+[PaperMC guide](adjusting-world-server-properties/papermc) for setup details.
 
-We recommend you follow the instructions listed for [PaperMC](adjusting-world-server-properties/papermc) to update
-modded servers, or re-download the mod to the latest version if all else fails.
+### Other Modded Servers
+
+If you are running another modded server (e.g. Forge, SpigotMC, Fabric) where you have manually set `mscs-server-jar`,
+the `mscs update` command will not work. You will need to download the updated server JAR manually and update the
+relevant properties in `mscs.properties`.

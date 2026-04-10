@@ -54,14 +54,26 @@ mscs-location=/opt/mscs
 ; Location of world files.
 mscs-worlds-location=/opt/mscs/worlds
 
+; Location of version JSON cache files.
+mscs-versions-location=/opt/mscs/versions
+
 ; URL to download the version_manifest.json file.
 mscs-versions-url=https://launchermeta.mojang.com/mc/game/version_manifest.json
 
 ; Location of the version_manifest.json file.
-mscs-versions-json=/opt/mscs/version_manifest.json
+mscs-versions-json=/opt/mscs/versions/version_manifest.json
 
 ; Length in minutes to keep the version_manifest.json file before updating.
 mscs-versions-duration=30
+
+; URL to download the PaperMC project information file.
+mscs-paper-versions-url=https://fill.papermc.io/v3/projects/paper
+
+; Location of the PaperMC project information file.
+mscs-paper-project-json=/opt/mscs/versions/paper_project.json
+
+; Default PaperMC build channel (STABLE, BETA, or ALPHA).
+mscs-default-paper-channel=STABLE
 
 ; Length in minutes to keep lock files before removing.
 mscs-lockfile-duration=1440
@@ -275,6 +287,13 @@ mscs-server-command=$JAVA -Xms$INITIAL_MEMORY -Xmx$MAXIMUM_MEMORY $JVM_ARGS -jar
 
 ; Restart the server after a crash (default disabled).
 mscs-restart-after-crash=false
+
+; Assign the server type (vanilla or papermc).
+mscs-server-type=vanilla
+
+; Assign the PaperMC build channel (STABLE, BETA, or ALPHA).
+; Only used when mscs-server-type=papermc.
+mscs-paper-channel=STABLE
 ```
 
 The following variables may be used in some of the values of the above keys:
